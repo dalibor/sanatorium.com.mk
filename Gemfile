@@ -29,7 +29,15 @@ group :test do
   gem 'turn', :require => false # TODO: test it! pretties test output
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem "shoulda"
+
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # patch for rake in rails 3, used by guard-annotate
+
   gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-annotate'
+  gem 'guard-spork'
   gem 'libnotify'
   gem 'rb-inotify'
 end

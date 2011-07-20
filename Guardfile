@@ -1,6 +1,14 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' } do
+  watch('config/application.rb')
+  watch('config/environment.rb')
+  watch(%r{^config/environments/.+\.rb$})
+  watch(%r{^config/initializers/.+\.rb$})
+  watch('spec/spec_helper.rb')
+end
+
 guard 'rspec', :version => 2 do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
@@ -17,4 +25,22 @@ guard 'rspec', :version => 2 do
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
   # Capybara request specs
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/requests/#{m[1]}_spec.rb" }
+end
+
+guard 'bundler' do
+  watch('Gemfile')
+  # Uncomment next line if Gemfile contain `gemspec' command
+  # watch(/^.+\.gemspec/)
+end
+
+guard 'annotate', :position => 'after', :tests => true do
+  watch( 'db/schema.rb' )
+
+  # Uncomment the following line if you also want to run annotate anytime
+  # a model file changes
+  #watch( 'app/models/**/*.rb' )
+
+  # Uncomment the following line if you are running routes annotation
+  # with the ":routes => true" option
+  #watch( 'config/routes.rb' )
 end
