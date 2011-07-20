@@ -23,3 +23,13 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :test do
+  gem 'turn', :require => false # TODO: test it! pretties test output
+end
+
+group :production do
+  # Could not find a JavaScript runtime.
+  # http://stackoverflow.com/questions/6075961/problem-deploying-rails-3-1-project-to-heroku-could-not-find-a-javascript-runtim
+  gem 'therubyracer-heroku', '0.8.1.pre3' # minimizes assets
+end
+
