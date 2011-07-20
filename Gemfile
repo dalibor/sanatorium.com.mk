@@ -23,8 +23,15 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'rspec-rails', :group => [:test, :development]
+
 group :test do
   gem 'turn', :require => false # TODO: test it! pretties test output
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'libnotify'
+  gem 'rb-inotify'
 end
 
 group :production do
