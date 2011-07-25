@@ -13,6 +13,7 @@ gem 'coffee-script'
 gem 'uglifier'
 
 gem 'jquery-rails'
+gem 'haml'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -27,6 +28,7 @@ gem 'rspec-rails', :group => [:test, :development]
 
 group :development do
   gem 'mongrel', '1.2.0.pre2'
+  gem 'haml-rails'
 end
 
 group :test do
