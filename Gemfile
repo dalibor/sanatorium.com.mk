@@ -25,6 +25,10 @@ gem 'jquery-rails'
 
 gem 'rspec-rails', :group => [:test, :development]
 
+group :development do
+  gem 'mongrel', '1.2.0.pre2'
+end
+
 group :test do
   gem 'turn', :require => false # TODO: test it! pretties test output
   gem 'factory_girl_rails'
