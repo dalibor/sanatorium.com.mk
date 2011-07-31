@@ -49,8 +49,12 @@ module Sanatorium
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    # Generators config
     config.generators do |g|
       g.template_engine :haml
     end
+
+    # SASS config
+    config.sass.preferred_syntax = :sass
   end
 end
