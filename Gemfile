@@ -30,7 +30,10 @@ gem 'haml'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'rspec-rails', :group => [:test, :development]
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'web-app-theme', '>= 0.6.2'
+end
 
 group :development do
   gem 'mongrel', '1.2.0.pre2'
@@ -45,6 +48,8 @@ group :test do
   gem 'shoulda'
   gem 'cucumber-rails'
   gem 'database_cleaner'
+  gem 'pickle'
+  gem 'launchy', '=0.3.7' # without warning for capybara
 
   gem 'spork', '~> 0.9.0.rc'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # patch for rake in rails 3, used by guard-annotate

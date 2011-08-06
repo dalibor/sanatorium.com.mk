@@ -1,0 +1,10 @@
+!!!
+%html
+%head
+  %title> Sanatorium
+  = stylesheet_link_tag "/stylesheets/web-app-theme/base", "/stylesheets/web-app-theme/themes/default/style", "/stylesheets/web-app-theme/override", :cache => true
+  = csrf_meta_tag
+%body
+  %div#container
+    %div#box
+      = yield

@@ -5,4 +5,4 @@ Feature: Visitor can see home page
 
 Scenario: Visitor can see dashboard
   When I go to the home page
-  Then I should see "Sanatorium"
+  Then I should see "Sanatorium" within "h1"
