@@ -10,5 +10,5 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe Admin::BaseHelper do
+describe ApplicationHelper do
 end
