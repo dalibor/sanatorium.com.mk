@@ -18,6 +18,11 @@ describe User do
       user.valid?
       user.errors[:password].should be_blank
     end
+
+    it "should validate_uniqueness_of :email" do
+      user = Factory(:user)
+      user.should validate_uniqueness_of :email
+    end
   end
 end
 # == Schema Information

@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to admin_root_url, :notice => 'Welcome to Administration'
+      redirect_to admin_root_url, :notice => 'You have successfully signed in'
     else
       #flash.now.alert = 'Invalid email or password'
       flash.now[:error] = 'Invalid email or password'

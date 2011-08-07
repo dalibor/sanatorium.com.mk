@@ -1,0 +1,9 @@
+.block
+  .content
+    %h2.title
+      = t("web-app-theme.edit", :default => "Edit")
+      Settings
+    .inner
+      = form_for @user, :url => admin_user_path(:current), :html => { :class => :form } do |f|
+        = render :partial => "form", :locals => {:f => f}
+- content_for :sidebar, render(:partial => 'sidebar')

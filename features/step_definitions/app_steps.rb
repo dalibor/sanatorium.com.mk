@@ -1,5 +1,5 @@
 Given /^I am signed in as "([^"]*)"$/ do |email|
-  %Q{
+  steps %Q{
     Given an admin exists
     When I go to the login page
       And I fill in "Email" with "#{email}"

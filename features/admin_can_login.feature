@@ -21,15 +21,8 @@ Feature: Admin can login
     Then I should see "Invalid email or password"
 
 
-    @run
   Scenario: Admin can logout
-    #Given I am signed in as "admin@sanatorium.com.mk"
-    Given an admin exists
-    When I go to the login page
-      And I fill in "Email" with "admin@sanatorium.com.mk"
-      And I fill in "Password" with "password"
-      And I press "Login"
-    Then I should see "Welcome to Administration"
+    Given I am signed in as "admin@sanatorium.com.mk"
 
     When I follow "Logout"
     Then I should be on the home page
