@@ -23,6 +23,16 @@ describe User do
       user = Factory(:user)
       user.should validate_uniqueness_of :email
     end
+
+    it "should validate_format_of :email" do
+      user = Factory.build(:user, :email => 'admin')
+      user.valid?
+      user.errors[:email].should include('is not formatted properly')
+
+      user = Factory.build(:user, :email => 'admin@sanatorium.com.mk')
+      user.valid?
+      user.errors[:email].should_not include('is not formatted properly')
+    end
   end
 end
 # == Schema Information

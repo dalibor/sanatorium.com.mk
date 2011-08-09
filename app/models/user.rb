@@ -6,9 +6,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
 
   # Validations
-  validates_presence_of :email
   validates_presence_of :password, :on => :create
-  validates_uniqueness_of :email
+  validates :email, :presence => true, :uniqueness => true, :email_format => true
 end
 # == Schema Information
 #
