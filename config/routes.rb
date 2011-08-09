@@ -51,7 +51,7 @@ Sanatorium::Application.routes.draw do
   #   end
   namespace :admin do
     root :to => 'welcome#index'
-    resources :users, :only => [:edit, :update]
+    resources :users, :except => [:show, :destroy]
   end
 
   # You can have the root of your site routed with "root"

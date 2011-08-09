@@ -3,7 +3,6 @@ Feature: Visitor cannot see administration
   As a visitor
   I want to not be able to access administration
 
-    @run
   Scenario: Visitor cannot access administration
     When I go to the admin welcome page
     Then I should see "Access denied"
