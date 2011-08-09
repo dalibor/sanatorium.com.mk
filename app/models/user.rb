@@ -5,6 +5,9 @@ class User < ActiveRecord::Base
   # Attributes
   attr_accessible :email, :password, :password_confirmation
 
+  # Associations
+  has_many :posts
+
   # Validations
   validates_presence_of :password, :on => :create
   validates :email, :presence => true, :uniqueness => true, :email_format => true

@@ -1,4 +1,8 @@
 Sanatorium::Application.routes.draw do
+
+  mount Blog::Engine => "/blog", :as => "blog"
+
+
   get '/login', :to => 'sessions#new', :as => 'login'
 
   resource :session, :only => [:new, :create, :destroy]

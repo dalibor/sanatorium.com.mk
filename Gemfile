@@ -20,6 +20,11 @@ end
 gem 'jquery-rails'
 gem 'modernizr-rails'
 gem 'haml'
+gem 'inherited_resources' # blog engine dependency
+
+# ActionView::Template::Error (undefined method `visitor'
+# http://www.ruby-forum.com/topic/2317524
+gem 'arel', '=2.1.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'

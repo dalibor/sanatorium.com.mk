@@ -3,7 +3,6 @@ Feature: Admin can create another admin
   As an admin
   I want to be able to create another admin
 
-    @run
   Scenario: Admin can create another admin
     Given I am signed in as "admin@sanatorium.com.mk"
 
