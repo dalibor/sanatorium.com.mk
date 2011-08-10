@@ -3,5 +3,7 @@ Blog::Engine.routes.draw do
 
   namespace :admin do
     resources :posts
+    resources :comments
   end
+
 end

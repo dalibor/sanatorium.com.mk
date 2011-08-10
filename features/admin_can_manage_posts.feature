@@ -4,7 +4,6 @@ Feature: Admin can manage blog posts
   I want to be able to manage posts
 
 
-  @run
   Scenario: Admin can manage posts in administration
     Given I am signed in as "admin@sanatorium.com.mk"
     When I follow "Posts"
