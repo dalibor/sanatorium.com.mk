@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20110810081853) do
     t.string   "description"
     t.boolean  "publish"
     t.datetime "published_at"
+    t.integer  "comments_count", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

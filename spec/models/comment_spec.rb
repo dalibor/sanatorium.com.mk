@@ -24,25 +24,24 @@ describe Comment do
     it { should validate_presence_of :content }
 
     it "should validate_format_of :email" do
-      user = Factory.build(:user, :email => 'user')
-      user.valid?
-      user.errors[:email].should include('is not formatted properly')
+      comment = Factory.build(:comment, :email => 'user')
+      comment.should_not be_valid
+      comment.errors[:email].should include('is not a valid email')
 
-      user = Factory.build(:user, :email => 'user@sanatorium.com.mk')
-      user.valid?
-      user.errors[:email].should_not include('is not formatted properly')
+      comment = Factory.build(:comment, :email => 'admin@sanatorium.com.mk')
+      comment.valid?
+      comment.errors[:email].should_not include('is not a valid email')
     end
 
     it "should validate format of url when url is not blank" do
       comment = Factory.build(:comment, :url => 'sanatorium')
       comment.should_not be_valid
-      comment.errors[:url].should include("is invalid")
+      comment.errors[:url].should include("is not a valid url")
     end
 
     it "should not validate format of url when url is blank" do
       comment = Factory.create(:comment, :url => '', :post => Factory.create(:post))
       comment.should be_valid
-      comment.errors[:url].should be_empty
     end
 
     it "should add protocol to url when url doesn't start with http protocol and save the comment" do
@@ -50,7 +49,5 @@ describe Comment do
       comment.save.should be_true
       comment.url.should == 'http://sanatorium.com.mk'
     end
-
   end
-
 end

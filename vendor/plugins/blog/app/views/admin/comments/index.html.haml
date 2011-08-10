@@ -26,6 +26,7 @@
             %td.last
               = link_to "#{t("web-app-theme.show", :default => "Show")}", blog.admin_comment_path(comment)
               |
-              \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", blog.edit_admin_comment_path(comment)} |
+              \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", blog.edit_admin_comment_path(comment)}
+              |
               \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", blog.admin_comment_path(comment), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
 - content_for :sidebar, render(:partial => 'sidebar')

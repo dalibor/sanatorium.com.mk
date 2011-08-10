@@ -7,6 +7,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :description
       t.boolean :publish
       t.datetime :published_at
+      t.integer :comments_count, :default => 0
 
       t.timestamps
     end

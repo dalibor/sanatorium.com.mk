@@ -30,12 +30,11 @@ describe User do
 
     it "should validate_format_of :email" do
       user = Factory.build(:user, :email => 'admin')
-      user.valid?
-      user.errors[:email].should include('is not formatted properly')
+      user.should_not be_valid
+      user.errors[:email].should include('is not a valid email')
 
       user = Factory.build(:user, :email => 'admin@sanatorium.com.mk')
-      user.valid?
-      user.errors[:email].should_not include('is not formatted properly')
+      user.should be_valid
     end
   end
 end

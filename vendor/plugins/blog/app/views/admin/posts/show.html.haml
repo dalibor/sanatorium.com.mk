@@ -36,6 +36,11 @@
           = t("activerecord.attributes.admin_post.published_at", :default => t("activerecord.labels.published_at", :default => "Published at"))
           \:
         = @post.published_at
+      %p
+        %b
+          = t("activerecord.attributes.admin_post.comments_count", :default => t("activerecord.labels.comments_count", :default => "Comments count"))
+          \:
+        = @post.comments_count
       .wat-cf
         = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), blog.edit_admin_post_path(@post), :class => "button"
         = link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), blog.admin_post_path(@post), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
