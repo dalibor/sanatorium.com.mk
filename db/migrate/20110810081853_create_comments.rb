@@ -9,7 +9,7 @@ class CreateComments < ActiveRecord::Migration
       t.string :user_ip
       t.string :user_agent
       t.string :referrer
-      t.boolean :approved
+      t.boolean :approved, :default => true
 
       t.timestamps
     end

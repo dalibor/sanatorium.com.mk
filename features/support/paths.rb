@@ -14,7 +14,8 @@ module NavigationHelpers
       login_path
     when /^the admin welcome page$/
       admin_root_path
-
+    when /^list of posts$/
+      '/blog/posts/'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

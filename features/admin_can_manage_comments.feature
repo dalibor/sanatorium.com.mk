@@ -3,7 +3,6 @@ Feature: Manage comments
   As an admin
   I want to be able to manage comments
 
-  @run
   Scenario: Admin can manage comments
     Given I am signed in as "admin@sanatorium.com.mk"
     And I follow "Posts"

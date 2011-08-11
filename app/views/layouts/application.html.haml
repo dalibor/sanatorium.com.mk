@@ -30,6 +30,11 @@
       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
     = javascript_include_tag "modernizr"
   %body
+    .flash
+      - flash.each do |type, message|
+        %div{:class => "message #{type}"}
+          %p= message
+
     = yield
     / ! end of #container
     = javascript_include_tag "public/application"

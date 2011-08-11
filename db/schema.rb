@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20110810081853) do
     t.string   "user_ip"
     t.string   "user_agent"
     t.string   "referrer"
-    t.boolean  "approved"
+    t.boolean  "approved",   :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
