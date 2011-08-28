@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.0.rc6'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -22,9 +22,10 @@ gem 'modernizr-rails'
 gem 'haml'
 gem 'inherited_resources' # blog engine dependency
 
-# ActionView::Template::Error (undefined method `visitor'
-# http://www.ruby-forum.com/topic/2317524
-gem 'arel', '=2.1.4'
+# Fix sprockets deprecation warnings
+# https://github.com/rails/rails/issues/2598
+# TODO: remove this in final release
+gem 'sprockets', '2.0.0.beta.13'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -50,7 +51,7 @@ group :test do
   gem 'turn', :require => false
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'shoulda'
+  gem 'shoulda-matchers'
   gem 'cucumber-rails'
   gem 'database_cleaner'
   gem 'pickle'
