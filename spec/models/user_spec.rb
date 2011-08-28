@@ -9,7 +9,8 @@ describe User do
   end
 
   describe "Associations" do
-    it { should have_many :posts}
+    it { should have_many :posts }
+    it { should have_many :galleries }
   end
 
   describe "Validations" do

@@ -1,6 +1,7 @@
 Sanatorium::Application.routes.draw do
 
   mount Blog::Engine => "/blog", :as => "blog"
+  mount GalleryEngine::Engine => "/gallery", :as => "gallery_engine"
 
 
   get '/login', :to => 'sessions#new', :as => 'login'

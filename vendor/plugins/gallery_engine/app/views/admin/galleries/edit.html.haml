@@ -1,0 +1,14 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first= link_to "#{t("web-app-theme.list", :default => "List")}", gallery_engine.admin_galleries_path
+      %li= link_to "#{t("web-app-theme.new", :default => "New")}", gallery_engine.new_admin_gallery_path
+      %li.active= link_to "#{t("web-app-theme.edit", :default => "Edit")}", gallery_engine.edit_admin_gallery_path
+  .content
+    %h2.title
+      = t("web-app-theme.edit", :default => "Edit")
+      Gallery
+    .inner
+      = form_for @gallery, :url => gallery_engine.admin_gallery_path(@gallery), :html => { :class => :form, :multipart => true } do |f|
+        = render :partial => "form", :locals => {:f => f}
+- content_for :sidebar, render(:partial => 'sidebar')

@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'modernizr-rails'
 gem 'haml'
 gem 'inherited_resources' # blog engine dependency
+gem 'carrierwave'
+gem 'rmagick'
 
 # Fix sprockets deprecation warnings
 # https://github.com/rails/rails/issues/2598
@@ -44,6 +46,8 @@ end
 group :development do
   gem 'mongrel', '1.2.0.pre2'
   gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
 end
 
 group :test do
@@ -55,7 +59,7 @@ group :test do
   gem 'cucumber-rails'
   gem 'database_cleaner'
   gem 'pickle'
-  gem 'launchy', '=0.3.7' # without warning for capybara
+  gem 'launchy'
 
   gem 'spork', '~> 0.9.0.rc'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # patch for rake in rails 3, used by guard-annotate

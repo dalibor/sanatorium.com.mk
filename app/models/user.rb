@@ -6,7 +6,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
 
   # Associations
-  has_many :posts
+  has_many :posts # blog engine
+  has_many :galleries # gallery engine
 
   # Validations
   validates_presence_of :password, :on => :create

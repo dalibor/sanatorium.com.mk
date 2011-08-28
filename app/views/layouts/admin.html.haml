@@ -22,6 +22,8 @@
               %a{:href => blog.admin_posts_url} Posts
             %li{:class => controller.controller_path == 'admin/comments' ? 'active' : ''}
               %a{:href => blog.admin_comments_url} Comments
+            %li{:class => controller.controller_path == 'admin/galleries' ? 'active' : ''}
+              %a{:href => gallery_engine.admin_galleries_url} Galleries
       #wrapper.wat-cf
         .flash
           - flash.each do |type, message|
