@@ -67,6 +67,14 @@ Sanatorium::Application.routes.draw do
       end
     end
     resources :downloads
+    resources :releases do
+      resources :songs do
+        member do
+          put :move_higher
+          put :move_lower
+        end
+      end
+    end
   end
 
   # You can have the root of your site routed with "root"

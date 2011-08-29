@@ -11,7 +11,6 @@ class Admin::PhotosController < Admin::ApplicationController
       paginate(:page => params[:page], :per_page => 10)
   end
 
-
   def move_lower
     @photo.move_lower
     flash[:notice] = 'Photo was successfully moved lower.'

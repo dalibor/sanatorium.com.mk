@@ -13,17 +13,13 @@ Feature: Admin can manage photos
       And I attach the file "spec/fixtures/rails1.png" to "Image"
       And I press "Save"
     Then I should see "Photo was successfully created"
-
-    When I follow "Show"
-    Then I should see "rails1.png" image
+      And I should see "rails1.png" image
 
     When I follow "Edit"
       And I attach the file "spec/fixtures/rails2.png" to "Image"
       And I press "Save"
     Then I should see "Photo was successfully updated"
-
-    When I follow "Show"
-    Then I should see "rails2.png" image
+      And I should see "rails2.png" image
 
     When I follow "Delete"
     Then I should see "Photo was successfully destroyed"

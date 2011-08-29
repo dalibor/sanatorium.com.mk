@@ -26,6 +26,8 @@
               %a{:href => admin_galleries_url} Galleries
             %li{:class => controller.controller_path == 'admin/downloads' ? 'active' : '' }
               %a{:href => admin_downloads_path} Downloads
+            %li{:class => controller.controller_path == 'admin/releases' ? 'active' : '' }
+              %a{:href => admin_releases_path} Releases
       #wrapper.wat-cf
         .flash
           - flash.each do |type, message|

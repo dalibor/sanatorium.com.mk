@@ -1,6 +1,6 @@
 class Gallery < ActiveRecord::Base
 
-  mount_uploader :cover, CoverUploader
+  mount_uploader :cover, GalleryCoverUploader
 
   # Attributes
   attr_accessible :name, :description, :cover

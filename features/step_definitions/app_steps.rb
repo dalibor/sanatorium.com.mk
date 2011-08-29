@@ -17,4 +17,11 @@ Given /^gallery and photos exists$/ do
                     :image => File.open(File.join(Rails.root, 'spec', 'fixtures', 'rails2.png')))
 end
 
+Given /^release and songs exists$/ do
+  release = Factory(:release)
+  photo1  = Factory(:song, :release => release, :position => 1,
+                    :name => 'Senka Na Smrtta')
+  photo2  = Factory(:song, :release => release, :position => 2,
+                    :name => 'Bez Razum I Svest')
+end
 

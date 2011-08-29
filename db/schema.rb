@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110829184235) do
+ActiveRecord::Schema.define(:version => 20110829200710) do
 
   create_table "comments", :force => true do |t|
     t.integer  "post_id"
@@ -61,6 +61,25 @@ ActiveRecord::Schema.define(:version => 20110829184235) do
     t.boolean  "publish"
     t.datetime "published_at"
     t.integer  "comments_count", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "releases", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "year"
+    t.string   "label"
+    t.string   "cover"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "songs", :force => true do |t|
+    t.integer  "release_id"
+    t.string   "name"
+    t.text     "lyrics"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

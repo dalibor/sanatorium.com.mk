@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class CoverUploader < CarrierWave::Uploader::Base
+class GalleryCoverUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or ImageScience support:
   include CarrierWave::RMagick
