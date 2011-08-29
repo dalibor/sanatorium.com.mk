@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc6'
+gem 'rails', '3.1.0.rc8'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -23,11 +23,6 @@ gem 'haml'
 gem 'inherited_resources' # blog engine dependency
 gem 'carrierwave'
 gem 'rmagick'
-
-# Fix sprockets deprecation warnings
-# https://github.com/rails/rails/issues/2598
-# TODO: remove this in final release
-gem 'sprockets', '2.0.0.beta.13'
 
 # Use unicorn as the web server
 # gem 'unicorn'
