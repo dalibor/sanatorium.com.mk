@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110829124822) do
+ActiveRecord::Schema.define(:version => 20110829184235) do
 
   create_table "comments", :force => true do |t|
     t.integer  "post_id"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(:version => 20110829124822) do
     t.string   "user_agent"
     t.string   "referrer"
     t.boolean  "approved",   :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "downloads", :force => true do |t|
+    t.string   "name"
+    t.string   "attachment"
+    t.string   "raw_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

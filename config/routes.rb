@@ -66,6 +66,7 @@ Sanatorium::Application.routes.draw do
         end
       end
     end
+    resources :downloads
   end
 
   # You can have the root of your site routed with "root"

@@ -24,8 +24,10 @@ class Admin::PhotosController < Admin::ApplicationController
     redirect_to admin_gallery_photos_url(@gallery)
   end
 
-  def load_photo
-    @gallery = Gallery.find(params[:gallery_id])
-    @photo = @gallery.photos.find(params[:id])
-  end
+  private
+
+    def load_photo
+      @gallery = Gallery.find(params[:gallery_id])
+      @photo = @gallery.photos.find(params[:id])
+    end
 end

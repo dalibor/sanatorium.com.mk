@@ -12,6 +12,7 @@ describe Photo do
   describe "Validations" do
     subject { Factory.create(:photo) }
     it { should validate_presence_of :gallery_id }
+
     it "validates image presence (on create)" do
       photo = Factory.build(:photo, :image => nil)
       photo.should validate_presence_of :image

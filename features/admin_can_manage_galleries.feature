@@ -13,9 +13,7 @@ Feature: Admin can manage galleries
       And I attach the file "spec/fixtures/rails1.png" to "Cover"
       And I press "Save"
     Then I should see "Gallery was successfully created"
-
-    When I follow "Show"
-    Then I should see "Kale Gallery"
+      And I should see "Kale Gallery"
       And I should see "Photos from concert at Kale"
       And I should see "rails1.png" image
 
@@ -25,8 +23,6 @@ Feature: Admin can manage galleries
       And I attach the file "spec/fixtures/rails2.png" to "Cover"
       And I press "Save"
     Then I should see "Gallery was successfully updated"
-
-    When I follow "Show"
       And I should see "Kale Gallery updated"
       And I should see "Photos from concert at Kale updated"
       And I should see "rails2.png" image

@@ -13,9 +13,7 @@ Feature: Admin can manage blog posts
       And I check "Publish"
       And I press "Save"
     Then I should see "Post was successfully created"
-
-    When I follow "Show"
-    Then I should see "New concert"
+      And I should see "New concert"
       And I should see "New concert at Kale"
       And I should see "admin@sanatorium.com.mk"
 
@@ -25,7 +23,7 @@ Feature: Admin can manage blog posts
       And I press "Save"
     Then I should see "Post was successfully updated"
       And I should see "New photos"
-      And I should not see "New photos published"
+      And I should not see "New concert"
 
     When I follow "Delete"
     Then I should see "Post was successfully destroyed"

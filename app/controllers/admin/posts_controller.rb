@@ -12,20 +12,6 @@ class Admin::PostsController < Admin::ApplicationController
     # but, allow all admins to edit posts
     @post = current_user.posts.new(params[:post])
 
-    create! do |success, failure|
-      success.html { redirect_to admin_posts_url }
-    end
-  end
-
-  def update
-    update! do |success, failure|
-      success.html { redirect_to admin_posts_url }
-    end
-  end
-
-  def destroy
-    destroy! do |success, failure|
-      success.html { redirect_to admin_posts_url }
-    end
+    create!
   end
 end

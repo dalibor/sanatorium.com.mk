@@ -16,9 +16,7 @@ Feature: Manage comments
       And I check "Approve"
       And I press "Save"
     Then I should see "Comment was successfully created"
-
-    When I follow "Show"
-    Then I should see "New concert"
+      And I should see "New concert"
       And I should see "John Doe"
       And I should see "user@sanatorium.com.mk"
       And I should see "New comment"

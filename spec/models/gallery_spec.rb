@@ -18,6 +18,7 @@ describe Gallery do
     it { should be_valid }
     it { should validate_presence_of :name }
     it { should validate_presence_of :description }
+
     it "validates cover presence (on create)" do
       gallery = Factory.build(:gallery, :cover => nil)
       gallery.should validate_presence_of :cover
