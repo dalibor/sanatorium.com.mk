@@ -27,7 +27,6 @@ Feature: Admin can manage songs
     Then I should see "Song was successfully destroyed"
 
 
-  @wip
   Scenario: Change position of song
     Given I am signed in as "admin@sanatorium.com.mk"
       And release and songs exists

@@ -75,6 +75,8 @@ Sanatorium::Application.routes.draw do
         end
       end
     end
+    resources :pages
+    resources :attachments
   end
 
   # You can have the root of your site routed with "root"
