@@ -19,11 +19,11 @@
             %li{:class => controller.controller_path == 'admin/users' ? 'active' : ''}
               %a{:href => admin_users_path} Users
             %li{:class => controller.controller_path == 'admin/posts' ? 'active' : ''}
-              %a{:href => blog.admin_posts_url} Posts
+              %a{:href => admin_posts_url} Posts
             %li{:class => controller.controller_path == 'admin/comments' ? 'active' : ''}
-              %a{:href => blog.admin_comments_url} Comments
+              %a{:href => admin_comments_url} Comments
             %li{:class => controller.controller_path == 'admin/galleries' ? 'active' : ''}
-              %a{:href => gallery_engine.admin_galleries_url} Galleries
+              %a{:href => admin_galleries_url} Galleries
       #wrapper.wat-cf
         .flash
           - flash.each do |type, message|

@@ -1,12 +1,11 @@
 Sanatorium::Application.routes.draw do
 
-  mount Blog::Engine => "/blog", :as => "blog"
-  mount GalleryEngine::Engine => "/gallery", :as => "gallery_engine"
-
-
   get '/login', :to => 'sessions#new', :as => 'login'
 
   resource :session, :only => [:new, :create, :destroy]
+  resources :posts, :only => [:index, :show] do
+    resources :comments, :only => [:create]
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -57,6 +56,9 @@ Sanatorium::Application.routes.draw do
   namespace :admin do
     root :to => 'welcome#index'
     resources :users, :except => [:show, :destroy]
+    resources :posts
+    resources :comments
+    resources :galleries
   end
 
   # You can have the root of your site routed with "root"

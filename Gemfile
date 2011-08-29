@@ -23,6 +23,7 @@ gem 'haml'
 gem 'inherited_resources' # blog engine dependency
 gem 'carrierwave'
 gem 'rmagick'
+gem 'will_paginate', '~> 3.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
