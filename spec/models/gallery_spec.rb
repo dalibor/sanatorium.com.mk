@@ -10,7 +10,7 @@ describe Gallery do
 
   describe "Associations" do
     it { should belong_to :user }
-    #it { should have_many :photos }
+    it { should have_many :photos }
   end
 
   describe 'Validations' do

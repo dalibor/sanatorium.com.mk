@@ -58,7 +58,14 @@ Sanatorium::Application.routes.draw do
     resources :users, :except => [:show, :destroy]
     resources :posts
     resources :comments
-    resources :galleries
+    resources :galleries do
+      resources :photos do
+        member do
+          put :move_higher
+          put :move_lower
+        end
+      end
+    end
   end
 
   # You can have the root of your site routed with "root"

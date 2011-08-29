@@ -1,3 +1,5 @@
+= render "shared/error_messages", :resource => @comment
+
 .group
   = f.label :post_id, t("activerecord.attributes.comment.post_id", :default => "Post"), :class => :label
   = f.collection_select :post_id, Post.find(:all,  :order => 'title ASC'), :id, :title, {:include_blank => "Select post"}, :class => 'collection_select'

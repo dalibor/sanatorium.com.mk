@@ -24,6 +24,8 @@
             %td
               = gallery.created_at
             %td.last
+              = link_to "Photos", admin_gallery_photos_path(gallery)
+              |
               = link_to "#{t("web-app-theme.show", :default => "Show")}", admin_gallery_path(gallery)
               |
               \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_admin_gallery_path(gallery)}

@@ -1,0 +1,13 @@
+= render "shared/error_messages", :resource => @photo
+
+.group
+  = f.hidden_field :gallery_id, :value => @gallery.id
+  = f.label :image, t("activerecord.attributes.photo.image", :default => "Image"), :class => :label
+  = f.file_field :image, :class => 'file_field'
+  %span.description Ex: a simple text
+.group.navform.wat-cf
+  %button.button{:type => "submit"}
+    = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
+    = t("web-app-theme.save", :default => "Save")
+  %span.text_button_padding= t("web-app-theme.or", :default => "or")
+  = link_to t("web-app-theme.cancel", :default => "Cancel"), admin_gallery_photos_path(@gallery), :class => "text_button_padding link_button"

@@ -22,7 +22,7 @@
               %a{:href => admin_posts_url} Posts
             %li{:class => controller.controller_path == 'admin/comments' ? 'active' : ''}
               %a{:href => admin_comments_url} Comments
-            %li{:class => controller.controller_path == 'admin/galleries' ? 'active' : ''}
+            %li{:class => controller.controller_path.in?(['admin/galleries', 'admin/photos']) ? 'active' : ''}
               %a{:href => admin_galleries_url} Galleries
       #wrapper.wat-cf
         .flash

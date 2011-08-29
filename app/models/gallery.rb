@@ -7,6 +7,7 @@ class Gallery < ActiveRecord::Base
 
   # Associations
   belongs_to :user
+  has_many :photos
 
   # Validations
   validates_presence_of :name, :description, :cover
