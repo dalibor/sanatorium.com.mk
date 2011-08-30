@@ -6,5 +6,5 @@
  *= require ./reset
  *= require ./boilerplate
  *= require ./ie
- *= require_tree .
+ *= require_directory .
 */
