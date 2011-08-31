@@ -1,11 +1,11 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+mk:
   menu:
-    news: "News"
-    band: "Band"
-    photos: "Photos"
-    media: "Media"
-    releases: "Releases"
-    contact: "Contact"
+    news: "Новости"
+    band: "Бенд"
+    photos: "Галерија"
+    media: "Медиа"
+    releases: "Изданија"
+    contact: "Контакт"

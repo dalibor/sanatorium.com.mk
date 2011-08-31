@@ -1,11 +1,17 @@
 .wrapper
   = link_to root_path do
     %h1#logo.ir Sanatorium
-  %nav
-    %ul
-      %li= link_to "News", posts_path
-      %li= link_to "Band", band_path
-      %li= link_to "Photos", "#"
-      %li= link_to "Media", "#"
-      %li= link_to "Releases", "#"
-      %li= mail_to 'sanatorium@sanatorium.com.mk', 'Contact'
+
+  #main_nav
+    %nav
+      %ul
+        %li= link_to t('menu.news'), posts_path
+        %li= link_to t('menu.band'), band_path
+        %li= link_to t('menu.photos'), "#"
+        %li= link_to t('menu.media'), "#"
+        %li= link_to t('menu.releases'), "#"
+        %li= mail_to 'sanatorium@sanatorium.com.mk', t('menu.contact')
+    %nav.lang
+      %ul
+        %li= link_to image_tag('en.jpg'), "?lang=en"
+        %li= link_to image_tag('mk.jpg'), "?lang=mk"

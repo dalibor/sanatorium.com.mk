@@ -25,6 +25,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'will_paginate', '~> 3.0.0'
 gem 'acts_as_list'
+gem 'model_fields_i18n'
 
 # Use unicorn as the web server
 # gem 'unicorn'
