@@ -75,7 +75,7 @@ Sanatorium::Application.routes.draw do
         end
       end
     end
-    resources :pages
+    resources :pages, :except => [:new]
     resources :attachments
   end
 
