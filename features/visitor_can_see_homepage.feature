@@ -1,5 +1,5 @@
 Feature: Visitor can see home page
-  In order to read new about Sanatorium
+  In order to read news about Sanatorium
   As a visitor
   I want to be able to see the homepage
 

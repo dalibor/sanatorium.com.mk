@@ -31,13 +31,16 @@
       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
     = javascript_include_tag "modernizr"
   %body
-    .flash
-      - flash.each do |type, message|
-        %div{:class => "message #{type}"}
-          %p= message
-
-    = yield
+    #container
+      %header.header
+        = render :partial => 'layouts/header'
+      .wrapper
+        = render :partial => 'layouts/flashes'
+        = yield
+      %footer.footer
+        = render :partial => 'layouts/footer'
     / ! end of #container
+
     = javascript_include_tag "application"
     / mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
     -#:javascript

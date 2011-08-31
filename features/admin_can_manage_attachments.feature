@@ -9,12 +9,10 @@ Feature: Admin can manage attachments
     When I follow "Attachments"
       And I follow "New"
       And I fill in "Name" with "Ime na slika"
-      And I fill in "Name En" with "Image name"
       And I attach the file "spec/fixtures/rails1.png" to "Attachment"
       And I press "Save"
     Then I should see "Attachment was successfully created"
       And I should see "Ime na slika"
-      And I should see "Image name"
       And I should see "rails1.png"
 
     When I follow "Edit"

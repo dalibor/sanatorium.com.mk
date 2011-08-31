@@ -1,6 +1,7 @@
 Sanatorium::Application.routes.draw do
 
   get '/login', :to => 'sessions#new', :as => 'login'
+  get '/band', :to => 'pages#show', :id => 'band'
 
   resource :session, :only => [:new, :create, :destroy]
   resources :posts, :only => [:index, :show] do

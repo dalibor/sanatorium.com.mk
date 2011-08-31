@@ -1,0 +1,11 @@
+.wrapper
+  = link_to root_path do
+    %h1#logo.ir Sanatorium
+  %nav
+    %ul
+      %li= link_to "News", posts_path
+      %li= link_to "Band", band_path
+      %li= link_to "Photos", "#"
+      %li= link_to "Media", "#"
+      %li= link_to "Releases", "#"
+      %li= mail_to 'sanatorium@sanatorium.com.mk', 'Contact'
