@@ -13,9 +13,19 @@
         = @release.name
       %p
         %b
+          = t("activerecord.attributes.admin_release.name_en", :default => t("activerecord.labels.name_en", :default => "Name En"))
+          \:
+        = @release.name_en
+      %p
+        %b
           = t("activerecord.attributes.admin_release.description", :default => t("activerecord.labels.description", :default => "Description"))
           \:
         = @release.description
+      %p
+        %b
+          = t("activerecord.attributes.admin_release.description_en", :default => t("activerecord.labels.description_en", :default => "Description En"))
+          \:
+        = @release.description_en
       %p
         %b
           = t("activerecord.attributes.admin_release.year", :default => t("activerecord.labels.year", :default => "Year"))

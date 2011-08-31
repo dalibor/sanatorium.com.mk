@@ -13,6 +13,11 @@
         = @download.name
       %p
         %b
+          = t("activerecord.attributes.admin_download.name_en", :default => t("activerecord.labels.name_en", :default => "Name En"))
+          \:
+        = @download.name_en
+      %p
+        %b
           = t("activerecord.attributes.admin_download.attachment", :default => t("activerecord.labels.attachment", :default => "Attachment"))
           \:
         = link_to @download.attachment, @download.attachment.to_s

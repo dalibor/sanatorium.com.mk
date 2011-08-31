@@ -13,6 +13,11 @@
         = @attachment.name
       %p
         %b
+          = t("activerecord.attributes.admin_attachment.name_en", :default => t("activerecord.labels.name_en", :default => "Name En"))
+          \:
+        = @attachment.name_en
+      %p
+        %b
           = t("activerecord.attributes.admin_attachment.attachment", :default => t("activerecord.labels.attachment", :default => "Attachment"))
           \:
         = link_to @attachment.attachment, @attachment.attachment_url

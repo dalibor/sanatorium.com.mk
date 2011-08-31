@@ -18,9 +18,19 @@
         = @gallery.name
       %p
         %b
+          = t("activerecord.attributes.admin_gallery.name_en", :default => t("activerecord.labels.name_en", :default => "Name En"))
+          \:
+        = @gallery.name_en
+      %p
+        %b
           = t("activerecord.attributes.admin_gallery.description", :default => t("activerecord.labels.description", :default => "Description"))
           \:
         = @gallery.description
+      %p
+        %b
+          = t("activerecord.attributes.admin_gallery.description_en", :default => t("activerecord.labels.description_en", :default => "Description En"))
+          \:
+        = @gallery.description_en
       %p
         %b
           = t("activerecord.attributes.admin_gallery.photos_count", :default => t("activerecord.labels.photos_count", :default => "Photos count"))

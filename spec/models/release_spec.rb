@@ -7,6 +7,8 @@ describe Release do
     it { should allow_mass_assignment_of :year }
     it { should allow_mass_assignment_of :label }
     it { should allow_mass_assignment_of :cover }
+    it { should allow_mass_assignment_of :name_en }
+    it { should allow_mass_assignment_of :description_en }
   end
 
   describe "Associations" do
@@ -19,6 +21,8 @@ describe Release do
     it { should validate_presence_of :description }
     it { should validate_presence_of :year }
     it { should validate_presence_of :label }
+    it { should validate_presence_of :name_en }
+    it { should validate_presence_of :description_en }
 
     it "validates cover presence (on create)" do
       release = Factory.build(:release, :cover => nil)

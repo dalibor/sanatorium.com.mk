@@ -24,4 +24,3 @@ Given /^release and songs exists$/ do
   photo2  = Factory(:song, :release => release, :position => 2,
                     :name => 'Bez Razum I Svest')
 end
-

@@ -3,8 +3,16 @@
   = f.text_field :name, :class => 'text_field'
   %span.description Ex: a simple text
 .group
+  = f.label :name_en, t("activerecord.attributes.release.name_en", :default => "Name En"), :class => :label
+  = f.text_field :name_en, :class => 'text_field'
+  %span.description Ex: a simple text
+.group
   = f.label :description, t("activerecord.attributes.release.description", :default => "Description"), :class => :label
   = f.text_area :description, :class => 'text_area'
+  %span.description Ex: a simple text
+.group
+  = f.label :description_en, t("activerecord.attributes.release.description_en", :default => "Description En"), :class => :label
+  = f.text_area :description_en, :class => 'text_area'
   %span.description Ex: a simple text
 .group
   = f.label :year, t("activerecord.attributes.release.year", :default => "Year"), :class => :label

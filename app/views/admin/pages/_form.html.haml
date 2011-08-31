@@ -2,6 +2,10 @@
   = f.label :content, t("activerecord.attributes.page.content", :default => "Content"), :class => :label
   = f.text_area :content, :class => 'text_area wymeditor'
   %span.description Ex: a simple text
+.group
+  = f.label :content_en, t("activerecord.attributes.page.content_en", :default => "Content En"), :class => :label
+  = f.text_area :content_en, :class => 'text_area wymeditor'
+  %span.description Ex: a simple text
 .group.navform.wat-cf
   %button.button{:type => "submit"}
     = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")

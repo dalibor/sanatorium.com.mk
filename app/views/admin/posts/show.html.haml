@@ -18,14 +18,29 @@
         = @post.title
       %p
         %b
+          = t("activerecord.attributes.admin_post.title_en", :default => t("activerecord.labels.title_en", :default => "Title En"))
+          \:
+        = @post.title_en
+      %p
+        %b
           = t("activerecord.attributes.admin_post.content", :default => t("activerecord.labels.content", :default => "Content"))
           \:
         = @post.content
       %p
         %b
+          = t("activerecord.attributes.admin_post.content_en", :default => t("activerecord.labels.content_en", :default => "Content En"))
+          \:
+        = @post.content_en
+      %p
+        %b
           = t("activerecord.attributes.admin_post.description", :default => t("activerecord.labels.description", :default => "Description"))
           \:
         = @post.description
+      %p
+        %b
+          = t("activerecord.attributes.admin_post.description_en", :default => t("activerecord.labels.description_en", :default => "Description En"))
+          \:
+        = @post.description_en
       %p
         %b
           = t("activerecord.attributes.admin_post.publish", :default => t("activerecord.labels.publish", :default => "Publish"))

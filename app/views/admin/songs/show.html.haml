@@ -18,9 +18,19 @@
         = @song.name
       %p
         %b
+          = t("activerecord.attributes.admin_song.name_en", :default => t("activerecord.labels.name_en", :default => "Name En"))
+          \:
+        = @song.name_en
+      %p
+        %b
           = t("activerecord.attributes.admin_song.lyrics", :default => t("activerecord.labels.lyrics", :default => "Lyrics"))
           \:
         = @song.lyrics
+      %p
+        %b
+          = t("activerecord.attributes.admin_song.lyrics_en", :default => t("activerecord.labels.lyrics_en", :default => "Lyrics En"))
+          \:
+        = @song.lyrics_en
       %p
         %b
           = t("activerecord.attributes.admin_song.position", :default => t("activerecord.labels.position", :default => "Position"))

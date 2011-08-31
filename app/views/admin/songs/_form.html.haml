@@ -4,8 +4,16 @@
   = f.text_field :name, :class => 'text_field'
   %span.description Ex: a simple text
 .group
+  = f.label :name_en, t("activerecord.attributes.song.name_en", :default => "Name En"), :class => :label
+  = f.text_field :name_en, :class => 'text_field'
+  %span.description Ex: a simple text
+.group
   = f.label :lyrics, t("activerecord.attributes.song.lyrics", :default => "Lyrics"), :class => :label
   = f.text_area :lyrics, :class => 'text_area'
+  %span.description Ex: a simple text
+.group
+  = f.label :lyrics_en, t("activerecord.attributes.song.lyrics_en", :default => "Lyrics En"), :class => :label
+  = f.text_area :lyrics_en, :class => 'text_area'
   %span.description Ex: a simple text
 .group.navform.wat-cf
   %button.button{:type => "submit"}

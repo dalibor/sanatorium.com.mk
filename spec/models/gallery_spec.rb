@@ -6,6 +6,8 @@ describe Gallery do
     it { should allow_mass_assignment_of :description }
     it { should allow_mass_assignment_of :cover }
     it { should_not allow_mass_assignment_of :user_id }
+    it { should allow_mass_assignment_of :name_en }
+    it { should allow_mass_assignment_of :description_en }
   end
 
   describe "Associations" do
@@ -18,6 +20,8 @@ describe Gallery do
     it { should be_valid }
     it { should validate_presence_of :name }
     it { should validate_presence_of :description }
+    it { should validate_presence_of :name_en }
+    it { should validate_presence_of :description_en }
 
     it "validates cover presence (on create)" do
       gallery = Factory.build(:gallery, :cover => nil)

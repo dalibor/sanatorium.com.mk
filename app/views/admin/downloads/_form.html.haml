@@ -3,6 +3,10 @@
   = f.text_field :name, :class => 'text_field'
   %span.description Ex: a simple text
 .group
+  = f.label :name_en, t("activerecord.attributes.download.name_en", :default => "Name En"), :class => :label
+  = f.text_field :name_en, :class => 'text_field'
+  %span.description Ex: a simple text
+.group
   = f.label :attachment, t("activerecord.attributes.download.attachment", :default => "Attachment"), :class => :label
   = f.file_field :attachment, :class => 'file_field'
   %span.description Ex: a simple text

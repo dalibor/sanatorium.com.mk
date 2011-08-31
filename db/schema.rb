@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110829222214) do
+ActiveRecord::Schema.define(:version => 20110831102524) do
 
   create_table "attachments", :force => true do |t|
     t.string   "name"
     t.string   "attachment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_en"
   end
 
   create_table "comments", :force => true do |t|
@@ -40,16 +41,19 @@ ActiveRecord::Schema.define(:version => 20110829222214) do
     t.string   "raw_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_en"
   end
 
   create_table "galleries", :force => true do |t|
     t.integer  "user_id"
     t.string   "name"
     t.text     "description"
-    t.integer  "photos_count", :default => 0
+    t.integer  "photos_count",   :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cover"
+    t.string   "name_en"
+    t.text     "description_en"
   end
 
   create_table "pages", :force => true do |t|
@@ -57,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20110829222214) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "content_en"
   end
 
   create_table "photos", :force => true do |t|
@@ -77,6 +82,9 @@ ActiveRecord::Schema.define(:version => 20110829222214) do
     t.integer  "comments_count", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title_en"
+    t.text     "content_en"
+    t.string   "description_en"
   end
 
   create_table "releases", :force => true do |t|
@@ -87,6 +95,8 @@ ActiveRecord::Schema.define(:version => 20110829222214) do
     t.string   "cover"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_en"
+    t.text     "description_en"
   end
 
   create_table "songs", :force => true do |t|
@@ -96,6 +106,8 @@ ActiveRecord::Schema.define(:version => 20110829222214) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_en"
+    t.text     "lyrics_en"
   end
 
   create_table "users", :force => true do |t|

@@ -7,6 +7,9 @@ describe Post do
     it { should allow_mass_assignment_of :description }
     it { should allow_mass_assignment_of :publish }
     it { should allow_mass_assignment_of :published_at }
+    it { should allow_mass_assignment_of :title_en }
+    it { should allow_mass_assignment_of :content_en }
+    it { should allow_mass_assignment_of :description_en }
     it { should_not allow_mass_assignment_of :user_id }
   end
 
@@ -20,6 +23,8 @@ describe Post do
     it { should be_valid }
     it { should validate_presence_of :title }
     it { should validate_presence_of :content }
+    it { should validate_presence_of :title_en }
+    it { should validate_presence_of :content_en }
   end
 
   describe 'published_at timestamp' do
