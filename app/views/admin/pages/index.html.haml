@@ -9,15 +9,12 @@
     .inner
       %table.table
         %tr
-          %th.first ID
           %th
             = t("activerecord.attributes.admin_page.key", :default => t("activerecord.labels.key", :default => "Key"))
           %th= t("web-app-theme.created_at", :default => "Created at")
           %th.last &nbsp;
         - @pages.each do |page|
           %tr{:class => cycle("odd", "even")}
-            %td
-              = page.id
             %td
               = link_to page.key, admin_page_path(page)
             %td

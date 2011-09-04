@@ -8,11 +8,11 @@
   %span.description Ex: a simple text
 .group
   = f.label :description, t("activerecord.attributes.release.description", :default => "Description"), :class => :label
-  = f.text_area :description, :class => 'text_area'
+  = f.text_area :description, :class => 'text_area wymeditor'
   %span.description Ex: a simple text
 .group
   = f.label :description_en, t("activerecord.attributes.release.description_en", :default => "Description En"), :class => :label
-  = f.text_area :description_en, :class => 'text_area'
+  = f.text_area :description_en, :class => 'text_area wymeditor'
   %span.description Ex: a simple text
 .group
   = f.label :year, t("activerecord.attributes.release.year", :default => "Year"), :class => :label

@@ -7,8 +7,7 @@ class Admin::SongsController < Admin::ApplicationController
 
   def index
     @release = Release.find(params[:release_id])
-    @songs = @release.songs.order('position ASC').
-      paginate(:page => params[:page], :per_page => 10)
+    @songs = @release.songs.order('position ASC')
   end
 
   def move_lower

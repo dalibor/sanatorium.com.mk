@@ -79,11 +79,12 @@ header
 /* HEADER END */
 
 /* FOOTER BEGIN */
+
 .footer
   margin-top: 20px
-  padding-top: 40px
+  padding-top: 55px
   background: image_url("footer.jpg") no-repeat scroll center top
-  height: 41px
+  height: 26px
 
   .copyright
     float: left
@@ -94,6 +95,22 @@ header
     ul
       +horizontal-list
 /* FOOTER END */
+
+/* STICKY FOOTER BEGIN */
+html, body
+  height: 100%
+
+#container
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  /* must be same as footer height */
+  margin: 0 auto -101px
+
+.push
+  /* must be same as footer height */
+  height: 101px
+/* STICKY FOOTER END */
 
 /* FEATURED BEGIN */
 #featured

@@ -26,7 +26,7 @@
               %a{:href => admin_galleries_url} Galleries
             %li{:class => controller.controller_path == 'admin/downloads' ? 'active' : '' }
               %a{:href => admin_downloads_path} Downloads
-            %li{:class => controller.controller_path == 'admin/releases' ? 'active' : '' }
+            %li{:class => controller.controller_path.in?(['admin/releases', 'admin/songs']) ? 'active' : ''}
               %a{:href => admin_releases_path} Releases
             %li{:class => controller.controller_path == 'admin/pages' ? 'active' : '' }
               %a{:href => admin_pages_path} Pages

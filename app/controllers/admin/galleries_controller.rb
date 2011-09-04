@@ -2,9 +2,10 @@ class Admin::GalleriesController < Admin::ApplicationController
 
   inherit_resources
 
+  before_filter :load_gallery, :only => [:move_lower, :move_higher]
+
   def index
-    @galleries = Gallery.order('featured DESC, created_at DESC').
-      page(params[:page]).per_page(10)
+    @galleries = Gallery.order('position ASC')
   end
 
   def create
@@ -14,4 +15,22 @@ class Admin::GalleriesController < Admin::ApplicationController
 
     create!
   end
+
+  def move_lower
+    @gallery.move_lower
+    flash[:notice] = 'Gallery was successfully moved lower.'
+    redirect_to admin_galleries_url
+  end
+
+  def move_higher
+    @gallery.move_higher
+    flash[:notice] = 'Gallery was successfully moved higher.'
+    redirect_to admin_galleries_url
+  end
+
+  private
+
+    def load_gallery
+      @gallery = Gallery.find(params[:id])
+    end
 end

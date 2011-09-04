@@ -7,6 +7,9 @@ Sanatorium::Application.routes.draw do
   resources :posts, :only => [:index, :show] do
     resources :comments, :only => [:create]
   end
+  resources :downloads, :only => [:index]
+  resources :galleries, :only => [:index, :show]
+  resources :releases, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -60,6 +63,10 @@ Sanatorium::Application.routes.draw do
     resources :posts
     resources :comments
     resources :galleries do
+      member do
+        put :move_higher
+        put :move_lower
+      end
       resources :photos do
         member do
           put :move_higher

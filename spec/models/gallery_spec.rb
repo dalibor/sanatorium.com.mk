@@ -30,18 +30,18 @@ describe Gallery do
     end
   end
 
-  #describe "photos count" do
-    #it "counts photos" do
-      #gallery = Factory(:gallery)
+  describe "photos count" do
+    it "counts photos" do
+      gallery = Factory(:gallery)
 
-      #photo1 = Factory(:photo, :gallery => gallery)
-      #gallery.reload.photos_count.should == 1
+      photo1 = Factory(:photo, :gallery => gallery)
+      gallery.reload.photos_count.should == 1
 
-      #photo2 = Factory(:photo, :gallery => gallery)
-      #gallery.reload.photos_count.should == 2
+      photo2 = Factory(:photo, :gallery => gallery)
+      gallery.reload.photos_count.should == 2
 
-      #photo2.destroy
-      #post.reload.comments_count.should == 1
-    #end
-  #end
+      photo2.destroy
+      gallery.reload.photos_count.should == 1
+    end
+  end
 end

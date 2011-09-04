@@ -7,7 +7,7 @@ class Photo < ActiveRecord::Base
   attr_accessible :image
 
   # Associations
-  belongs_to :gallery
+  belongs_to :gallery, :counter_cache => true
 
   # Validations
   validates_presence_of :gallery_id, :image

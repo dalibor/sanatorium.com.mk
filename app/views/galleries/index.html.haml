@@ -1,0 +1,9 @@
+%ul.galleries
+  - @galleries.each do |gallery|
+    %li
+      %h3
+        = link_to gallery.name, gallery
+        %span= "(#{gallery.photos_count})"
+      = image_tag gallery.cover_url(:thumb)
+      = gallery.description
+

@@ -35,3 +35,20 @@ Feature: Admin can manage galleries
     Then I should see "Gallery was successfully destroyed"
       And I should not see "Kale Galerija"
       And I should not see "Kale Galerija update"
+
+
+    Scenario: Change position of gallery
+      Given I am signed in as "admin@sanatorium.com.mk"
+        And gallery exists with name: "Gallery 1"
+        And gallery exists with name: "Gallery 2"
+      When I follow "Galleries"
+      Then I should see "Gallery 1" within ".odd"
+        And I should see "Gallery 2" within ".even"
+
+      When I follow "Move higher"
+      Then I should see "Gallery 2" within ".odd"
+        And I should see "Gallery 1" within ".even"
+
+      When I follow "Move lower"
+      Then I should see "Gallery 1" within ".odd"
+        And I should see "Gallery 2" within ".even"

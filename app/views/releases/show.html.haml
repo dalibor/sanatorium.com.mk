@@ -1,0 +1,11 @@
+= @release.name
+= image_tag @release.cover_url
+= raw @release.description
+= @release.year
+= @release.label
+
+%ul
+  - @songs.each do |song|
+    %li
+      %h3= song.t(:name)
+      = raw song.t(:lyrics)

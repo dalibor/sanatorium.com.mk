@@ -7,9 +7,9 @@
       %ul
         %li= link_to t('menu.news'), posts_path
         %li= link_to t('menu.band'), band_path
-        %li= link_to t('menu.photos'), "#"
-        %li= link_to t('menu.media'), "#"
-        %li= link_to t('menu.releases'), "#"
+        %li= link_to t('menu.photos'), galleries_path
+        %li= link_to t('menu.media'), downloads_path
+        %li= link_to t('menu.releases'), releases_path
         %li= mail_to 'sanatorium@sanatorium.com.mk', t('menu.contact')
         - if I18n.locale == :en
           %li.lang= link_to image_tag('mk.jpg'), "?lang=mk", :title => "Преведи на Македонски"

@@ -1,0 +1,9 @@
+%ul.releases
+  - @releases.each do |release|
+    %li
+      %h3
+        = link_to release.name, release
+        = image_tag release.cover_url(:thumb)
+        = release.year
+        = release.label
+

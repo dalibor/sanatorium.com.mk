@@ -10,15 +10,12 @@
     .inner
       %table.table
         %tr
-          %th.first ID
           %th
             = t("activerecord.attributes.admin_release.name", :default => t("activerecord.labels.name", :default => "Name"))
           %th= t("web-app-theme.created_at", :default => "Created at")
           %th.last &nbsp;
         - @releases.each do |release|
           %tr{:class => cycle("odd", "even")}
-            %td
-              = release.id
             %td
               = link_to release.name, admin_release_path(release)
             %td

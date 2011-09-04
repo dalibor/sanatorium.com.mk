@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110904123842) do
+ActiveRecord::Schema.define(:version => 20110904143335) do
 
   create_table "attachments", :force => true do |t|
     t.string   "name"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20110904123842) do
     t.string   "name_en"
     t.text     "description_en"
     t.boolean  "featured",       :default => false
+    t.integer  "position"
   end
 
   create_table "pages", :force => true do |t|

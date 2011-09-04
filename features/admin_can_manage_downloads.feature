@@ -32,18 +32,19 @@ Feature: Admin can manage downloads
     When I follow "Delete"
     Then I should see "Download was successfully destroyed"
 
-  Scenario: Change position of photo
-    Given I am signed in as "admin@sanatorium.com.mk"
-      And download exists with raw_type: "Audio", name: "Song 1"
-      And download exists with raw_type: "Audio", name: "Song 2"
-    When I follow "Downloads"
-    Then I should see "Song 1" within ".odd"
-      And I should see "Song 2" within ".even"
 
-    When I follow "Move higher"
-    Then I should see "Song 2" within ".odd"
-      And I should see "Song 1" within ".even"
+    Scenario: Change position of download
+      Given I am signed in as "admin@sanatorium.com.mk"
+        And download exists with raw_type: "Audio", name: "Song 1"
+        And download exists with raw_type: "Audio", name: "Song 2"
+      When I follow "Downloads"
+      Then I should see "Song 1" within ".odd"
+        And I should see "Song 2" within ".even"
 
-    When I follow "Move lower"
-    Then I should see "Song 1" within ".odd"
-      And I should see "Song 2" within ".even"
+      When I follow "Move higher"
+      Then I should see "Song 2" within ".odd"
+        And I should see "Song 1" within ".even"
+
+      When I follow "Move lower"
+      Then I should see "Song 1" within ".odd"
+        And I should see "Song 2" within ".even"
