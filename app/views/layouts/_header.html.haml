@@ -2,7 +2,13 @@
   = link_to root_path do
     %h1#logo.ir Sanatorium
 
+
   #main_nav
+    - if I18n.locale == :en
+      .lang= link_to image_tag('mk.jpg'), "?lang=mk", :title => "Преведи на Македонски"
+    - else
+      .lang= link_to image_tag('en.jpg'), "?lang=en", :title => "Translate to English"
+
     %nav
       %ul
         %li= link_to t('menu.news'), posts_path
@@ -11,7 +17,3 @@
         %li= link_to t('menu.media'), downloads_path
         %li= link_to t('menu.releases'), releases_path
         %li= mail_to 'sanatorium@sanatorium.com.mk', t('menu.contact')
-        - if I18n.locale == :en
-          %li.lang= link_to image_tag('mk.jpg'), "?lang=mk", :title => "Преведи на Македонски"
-        - else
-          %li.lang= link_to image_tag('en.jpg'), "?lang=en", :title => "Translate to English"

@@ -12,9 +12,9 @@ a, a:active, a:visited
   color: #CCC
   text-decoration: none
 
-a:hover
-  color: #DDD
-  text-decoration: underline
+a:hover, a:active, a:focus
+  color: #931308
+  text-decoration: none
 
 //p + p
   //text-indent: 1em
@@ -68,14 +68,39 @@ header
   #main_nav
     float: right
 
+    .lang
+      text-align: right
+      margin: 5px 5px 0 0
+
     nav
-      margin: 20px 0 0 0
+      margin: 15px 0 0 0
+      float: left
 
       ul
-        +horizontal-list(6px)
+        +horizontal-list(10px)
 
-        li.lang
-          margin-left: 10px
+        li
+          //width: 60px
+          text-align: center
+          background: image_url("menu.png") repeat scroll center top
+          height: 28px
+          padding-top: 12px
+
+          a
+            //color: rgba(255, 255, 255, 0.9)
+            //display: block
+            //letter-spacing: 1px
+            //padding: 7% 2% 6%
+            font-weight: bold
+            font-family: 'Trebuchet MS', Helvetica, sans-serif
+            //text-align: center
+            //text-decoration: none
+            text-transform: uppercase
+            //+linear-gradient(color-stops(#DF3E31, #DF554A), top)
+            //+opacity(0.5)
+            ///*text-shadow: black 0 1px 2px;*/
+            //+border-radius(3px)
+
 /* HEADER END */
 
 /* FOOTER BEGIN */
@@ -115,7 +140,7 @@ html, body
 /* FEATURED BEGIN */
 #featured
   overflow: hidden
-  height: 370px
+  height: 400px
   margin: 20px 0
 
   #slider
@@ -332,3 +357,32 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
 .submit
   margin-left: 100px
 
+
+/* GALLERIES BEGIN */
+
+ul.galleries
+  //+horizontal-list(10px)
+  overflow: hidden
+  margin: 0
+  padding: 0
+
+  li
+    float: left
+    width: 215px
+    padding-left: 25px
+    height: 200px
+    min-height: 100px
+
+    h3
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 18px
+      text-transform: uppercase
+
+    p
+      img
+        float: left
+        margin: 0 7px 7px 0
+
+
+/* GALLERIES END */
