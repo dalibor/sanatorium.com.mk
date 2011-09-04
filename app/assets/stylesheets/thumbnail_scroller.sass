@@ -1,0 +1,70 @@
+@import compass/css3
+
+.jThumbnailScroller
+  position: relative
+  height: 122px
+  padding: 0
+  overflow: hidden
+  +border-radius(5px)
+
+  .jTscrollerContainer
+    position: absolute
+
+  .jTscroller
+    position: relative
+    height: 100%
+    margin: 0
+    left: 0
+    top: 0
+    display: inline-block
+    *display: inline
+
+  .jTscrollerNextButton, .jTscrollerPrevButton
+    position: absolute
+    display: block
+    width: 30px
+    height: 30px
+    +border-radius(20px)
+    opacity: 0.7
+
+  .jTscrollerNextButton
+    background:  url(/images/arrows.png) no-repeat scroll 0 0
+    background-position:  -30px 0
+
+  .jTscrollerPrevButton
+    background:  url(/images/arrows.png) no-repeat scroll 0 0
+    left:  15px
+
+  .jTscrollerNextButton:hover, .jTscrollerPrevButton:hover
+    background-color: #d56916
+    opacity: 1
+
+  .jTscroller a
+    display: inline-block
+    *display: inline
+    border: 3px solid #ddd
+    margin: 6px 10px 6px 0
+    background: #fff
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+
+  .jTscroller a:hover
+    border-color: #fff
+  .jTscroller a:first-child
+    margin-left: 10px
+  .jTscroller a img
+    border: none
+
+  .jTscroller a
+    opacity: 0.7
+  .jTscroller a:hover
+    opacity: 1
+  .jTscrollerNextButton
+    margin: -20px 10px 0 10px
+    right: 0
+    top: 50%
+  .jTscrollerPrevButton
+    margin: -20px 10px 0 10px
+    left: 0
+    top: 50%

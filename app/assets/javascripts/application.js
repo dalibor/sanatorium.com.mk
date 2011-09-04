@@ -7,4 +7,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.nivo.slider.pack
+//= require jquery.lightbox.js
+//= require jquery.autolink.js
+//= require jquery.timeago.js
+//= require jquery.tweets.js
+//= require jquery-ui-1.8.16.custom.min.js
+//= require jquery.thumbnailScroller.js
 //= require_directory .

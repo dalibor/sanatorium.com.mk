@@ -11,7 +11,7 @@
         %li= link_to t('menu.media'), "#"
         %li= link_to t('menu.releases'), "#"
         %li= mail_to 'sanatorium@sanatorium.com.mk', t('menu.contact')
-    %nav.lang
-      %ul
-        %li= link_to image_tag('en.jpg'), "?lang=en"
-        %li= link_to image_tag('mk.jpg'), "?lang=mk"
+        - if I18n.locale == :en
+          %li.lang= link_to image_tag('mk.jpg'), "?lang=mk", :title => "Преведи на Македонски"
+        - else
+          %li.lang= link_to image_tag('en.jpg'), "?lang=en", :title => "Translate to English"

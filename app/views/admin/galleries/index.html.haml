@@ -13,6 +13,8 @@
           %th.first ID
           %th
             = t("activerecord.attributes.admin_gallery.name", :default => t("activerecord.labels.name", :default => "Name"))
+          %th
+            = t("activerecord.attributes.admin_gallery.featured", :default => t("activerecord.labels.featured", :default => "Featured"))
           %th= t("web-app-theme.created_at", :default => "Created at")
           %th.last &nbsp;
         - @galleries.each do |gallery|
@@ -21,6 +23,8 @@
               = gallery.id
             %td
               = link_to gallery.name, admin_gallery_path(gallery)
+            %td
+              = gallery.featured
             %td
               = gallery.created_at
             %td.last

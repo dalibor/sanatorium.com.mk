@@ -37,10 +37,13 @@
       .wrapper
         = render :partial => 'layouts/flashes'
         = yield
-      %footer.footer
+    %footer.footer
+      .wrapper
         = render :partial => 'layouts/footer'
     / ! end of #container
 
+    :javascript
+      window._locale = #{I18n.locale.to_json};
     = javascript_include_tag "application"
     / mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
     -#:javascript

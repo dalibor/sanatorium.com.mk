@@ -3,10 +3,10 @@
 @import "compass/css3/transform"
 
 body
-  background-color: #000
   color: #FFF
   font-size: 13px
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  background: image_url("bg.jpg") no-repeat scroll center top #000
 
 a, a:active, a:visited
   color: #CCC
@@ -24,16 +24,37 @@ p
   //margin-top: 1.5em
   margin-bottom: 1.5em
 
+h1
+  font-size: 2em
+  line-height: 0.75em
+  margin-top: 0.5em
+  margin-bottom: 1em
+h2
+  font-size: 1.5em
+h3
+  font-size: 1.25em
+h4
+  font-size: 1em
+  text-transform: uppercase
+  font-weight: bold
+h5
+  font-size: 0.9em
+h6
+  font-size: 0.8em
+
 #container
   width: 960px
   margin: 0 auto
 
 .wrapper
   overflow: hidden
+  width: 960px
+  margin: 0 auto
 
 #logo
-  width: 300px
-  height: 83px
+  margin-top: 10px
+  width: 400px
+  height: 80px
   background-image: image_url("logo.png")
 
 /* HEADER START */
@@ -53,16 +74,16 @@ header
       ul
         +horizontal-list(6px)
 
-    nav.lang
-      margin-top: 20px
-      width: 65px
-      float: right
+        li.lang
+          margin-left: 10px
 /* HEADER END */
 
 /* FOOTER BEGIN */
 .footer
-  height: 20px
-  margin-top: 30px
+  margin-top: 20px
+  padding-top: 40px
+  background: image_url("footer.jpg") no-repeat scroll center top
+  height: 41px
 
   .copyright
     float: left
@@ -78,20 +99,75 @@ header
 #featured
   overflow: hidden
   height: 370px
-  padding: 20px 0
-  //background: url(/assets/featured-bg.jpg) no-repeat scroll center top transparent
+  margin: 20px 0
 
   #slider
     width: 550px
     float: left
+    //border: 1px solid #222
 
   #promo
-    width: 310px
+    width: 370px
     float: right
+    text-align: center
+
+    h2
+      font-size: 22px
+      font-weight: bold
+      margin: 5px 0 10px
+      color: #CCC
+      text-shadow: #DDD 0 1px 1px
+    iframe
+      //border: 1px solid #222
 /* FEATURED END */
 
+/* NEWS BEGIN */
+#news
+  overflow: hidden
+  margin: 30px 0
 
+  #posts
+    width: 550px
+    float: left
 
+    ul
+      margin: 10px 0 30px
+      padding: 0px
+    ul li
+      margin: 15px 5px 0 0
+      padding: 5px 0
+      overflow: hidden
+      border-bottom: 1px dashed #222
+      list-style: none
+    ul li i
+      display: block
+      padding-top: 8px
+
+    header span.date
+      font-size: 0.9em
+      font-weight: bold
+
+  #twitter
+    width: 360px
+    float: right
+
+    ul
+      margin: 10px 0 30px
+      padding: 0
+    ul li
+      margin: 15px 5px 0 0
+      padding: 5px 0
+      overflow: hidden
+      border-bottom: 1px dashed #222
+      list-style: none
+    ul li i
+      display: block
+      padding-top: 8px
+    ul li .date
+      font-size: 0.9em
+      font-weight: bold
+
+/* NEWS END */
 
 .posts
   width: 650px
@@ -238,3 +314,4 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
 
 .submit
   margin-left: 100px
+

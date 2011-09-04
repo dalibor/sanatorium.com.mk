@@ -4,6 +4,7 @@
       %li.first= link_to "#{t("web-app-theme.list", :default => "List")}", admin_galleries_path
       %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_admin_gallery_path
       %li.active= link_to "#{t("web-app-theme.show", :default => "Show")}", admin_gallery_path
+      %li= link_to "#{t("web-app-theme.photos", :default => "Photos")}", admin_gallery_photos_path(@gallery)
   .content
     .inner
       %p
@@ -31,6 +32,11 @@
           = t("activerecord.attributes.admin_gallery.description_en", :default => t("activerecord.labels.description_en", :default => "Description En"))
           \:
         = @gallery.description_en
+      %p
+        %b
+          = t("activerecord.attributes.admin_gallery.featured", :default => t("activerecord.labels.featured", :default => "Featured"))
+          \:
+        = @gallery.featured
       %p
         %b
           = t("activerecord.attributes.admin_gallery.photos_count", :default => t("activerecord.labels.photos_count", :default => "Photos count"))

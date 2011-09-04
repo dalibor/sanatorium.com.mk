@@ -6,4 +6,33 @@
     = image_tag "slider/4.jpg"
     = image_tag "slider/5.jpg"
   #promo
-    Check out new album
+    - if @video
+      = raw @video.t(:content)
+
+#news
+  #posts
+    %h2= t('posts.latest')
+    %ul
+      - @posts.each do |post|
+        %li
+          %article
+            %header
+              %h3
+                = post.title
+              %span.date= t('posts.time', :time => time_ago_in_words(post.published_at))
+            %section
+              = truncate(strip_tags_with_space(post.content), :length => 300)
+              = link_to t('posts.read_more'), post_path(post)
+
+  #twitter
+    %h2= t('twitter.latest')
+    #tweets
+
+- if @photos.present?
+  #photos.jThumbnailScroller
+    .jTscrollerContainer
+      .jTscroller
+        - @photos.each do |photo|
+          = link_to image_tag(photo.image_url(:medium)), photo.image_url, :class => "lightbox", :rel => "lightbox"
+    = link_to "", "#", :class => "jTscrollerPrevButton"
+    = link_to "", "#", :class => "jTscrollerNextButton"

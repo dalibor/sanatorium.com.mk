@@ -11,4 +11,10 @@ class Photo < ActiveRecord::Base
 
   # Validations
   validates_presence_of :gallery_id, :image
+
+  # TODO: spec
+  def self.featured
+    gallery = Gallery.where({:featured => true}).order('updated_at DESC').first
+    gallery ? gallery.photos.order('position ASC') : []
+  end
 end

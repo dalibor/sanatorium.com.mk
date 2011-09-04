@@ -17,6 +17,10 @@
   = f.text_area :description_en, :class => 'text_area'
   %span.description Ex: a simple text
 .group
+  = f.label :featured, t("activerecord.attributes.gallery.featured", :default => "Featured"), :class => :label
+  = f.check_box :featured, :class => 'check_box'
+  %span.description Ex: a simple text
+.group
   = f.label :cover, t("activerecord.attributes.gallery.cover", :default => "Cover"), :class => :label
   = f.file_field :cover, :class => 'file_field'
   %span.description Ex: a simple text

@@ -67,7 +67,12 @@ Sanatorium::Application.routes.draw do
         end
       end
     end
-    resources :downloads
+    resources :downloads do
+      member do
+        put :move_higher
+        put :move_lower
+      end
+    end
     resources :releases do
       resources :songs do
         member do

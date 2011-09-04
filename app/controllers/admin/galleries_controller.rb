@@ -3,7 +3,8 @@ class Admin::GalleriesController < Admin::ApplicationController
   inherit_resources
 
   def index
-    @galleries = Gallery.paginate(:page => params[:page], :per_page => 10)
+    @galleries = Gallery.order('featured DESC, created_at DESC').
+      page(params[:page]).per_page(10)
   end
 
   def create

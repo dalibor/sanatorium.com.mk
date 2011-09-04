@@ -3,7 +3,7 @@ class Gallery < ActiveRecord::Base
   mount_uploader :cover, GalleryCoverUploader
 
   # Attributes
-  attr_accessible :name, :description, :cover,
+  attr_accessible :name, :description, :cover, :featured,
                   :name_en, :description_en
 
   # Associations

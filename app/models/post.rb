@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
   validates_presence_of :title, :content,
                         :title_en, :content_en
 
-  #Callbacks
+  # Callbacks
   before_save :reset_published_at, :unless => Proc.new {|m| m.publish }
 
   private

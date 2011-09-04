@@ -2,6 +2,7 @@ class Download < ActiveRecord::Base
 
   TYPES = ['Audio', 'Video', 'Interview']
 
+  acts_as_list :scope => 'raw_type=\'#{raw_type}\''
   mount_uploader :attachment, AttachmentUploader
 
   # Attributes

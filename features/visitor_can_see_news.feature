@@ -22,7 +22,7 @@ Feature: A visitor can view posts
       And I should not see "New Photos"
 
   Scenario: Don't display unpublished posts
-    Given a post exists with title: "New Concert at Kale", published_at: nil
+    Given a post exists with title: "New Concert at Kale", publish: nil, published_at: nil
     When I am on the home page
       And I follow "News"
     Then I should not see "New Concert at Kale"

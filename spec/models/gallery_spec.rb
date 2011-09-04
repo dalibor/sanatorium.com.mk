@@ -5,6 +5,7 @@ describe Gallery do
     it { should allow_mass_assignment_of :name }
     it { should allow_mass_assignment_of :description }
     it { should allow_mass_assignment_of :cover }
+    it { should allow_mass_assignment_of :featured }
     it { should_not allow_mass_assignment_of :user_id }
     it { should allow_mass_assignment_of :name_en }
     it { should allow_mass_assignment_of :description_en }

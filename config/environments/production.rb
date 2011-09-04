@@ -14,7 +14,7 @@ Sanatorium::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
-  # Use digest after assets precompile (RAILS_ENV=production rake assets:precompile)
+  # Generate digests for assets URLs
   config.assets.digest = true
 
   # Specify the default JavaScript compressor

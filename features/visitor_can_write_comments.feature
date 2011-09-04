@@ -18,9 +18,10 @@ Feature: A visitor can write comments
     And I should see "My first comment"
 
   Scenario: See comment errors
-    When I press "Comment"
+    When I fill in "Email" with "jd"
+      And I press "Comment"
     Then I should see "Please correct invalid fields in the form"
     And I should see "Name can't be blank"
-    And I should see "Email can't be blank, is not a valid email"
+    And I should see "Email is not a valid email"
     And I should see "Comment can't be blank"
 

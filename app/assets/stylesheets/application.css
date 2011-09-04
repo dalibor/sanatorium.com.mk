@@ -8,5 +8,6 @@
  *= require ./ie
  *= require nivo-slider/nivo-slider.css
  *= require nivo-slider/default.css
+ *= require lightbox.css
  *= require_directory .
 */

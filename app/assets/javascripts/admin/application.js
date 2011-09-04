@@ -7,5 +7,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require wymeditor/jquery.wymeditor.js
+//= require wymeditor/plugins/embed/jquery.wymeditor.embed.js
 //= require admin/wym_boot.js
 //= require_tree .

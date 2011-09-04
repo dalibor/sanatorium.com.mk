@@ -18,4 +18,8 @@ module ApplicationHelper
   #def stylesheet(*files)
     #content_for(:head) { stylesheet_link_tag(*files) }
   #end
+
+  def strip_tags_with_space(string)
+    string.to_s.gsub(/<\/?[^>]*>/, " ").strip
+  end
 end
