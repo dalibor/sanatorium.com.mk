@@ -42,6 +42,14 @@ h5
 h6
   font-size: 0.8em
 
+
+/* REUSED PAGE STYLES BEGIN */
+h2.title
+  margin: 0 0 15px 15px
+/* REUSED PAGE STYLES END */
+
+
+
 #container
   width: 960px
   margin: 0 auto
@@ -361,10 +369,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
 /* GALLERIES BEGIN */
 
 ul.galleries
-  //+horizontal-list(10px)
   overflow: hidden
-  margin: 0
-  padding: 0
 
   li
     float: left
@@ -380,8 +385,18 @@ ul.galleries
       line-height: 18px
       text-transform: uppercase
 
+    img
+      border: 1px solid #333
+
     p
       margin-top: 5px
+      font-size: 11px
 
+ul.gallery
+  li
+    float: left
+    padding: 20px 0 0 15px
 
+    img
+      border: 1px solid #333
 /* GALLERIES END */
