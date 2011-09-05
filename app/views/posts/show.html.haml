@@ -1,17 +1,17 @@
 - title(@post.title)
 -#- description(@post.description)
 
-.wrapper
+.posts_wrapper
   = render 'posts/post', :post => @post
 
-.comments
-  %a{:name => "comments"}
-  %h3 Comments
-  - if @post.comments.size > 0
-    %ol
-      = render :partial => 'comments/comment', :collection => @comments
-  - else
-    %p This article does not have any comments yet.
+  .comments
+    %a{:name => "comments"}
+    %h3= t('posts.comments')
+    - if @post.comments.size > 0
+      %ol
+        = render :partial => 'comments/comment', :collection => @comments
+    - else
+      %p= t('posts.no_comments')
 
-.comment_form
-  = render :partial => 'comments/form'
+  .comment_form
+    = render :partial => 'comments/form'

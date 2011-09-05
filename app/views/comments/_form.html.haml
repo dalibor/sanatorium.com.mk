@@ -1,22 +1,22 @@
 .new_comment
-  %h3 Leave a comment
+  -#%h3= t('posts.leave_comment')
 
   -#= render "shared/error_messages", :resource => @comment
   = form_for @comment, :url => post_comments_path(@post), :html => {:class => 'form'} do |f|
     %div
-      %span.field_notice required
+      %span.field_notice= t('comments.validations.name')
       = f.label :name, 'Name'
       = f.text_field :name
     %div
-      %span.field_notice valid email required, will not be published
+      %span.field_notice= t('comments.validations.email')
       = f.label :email, 'Email'
       = f.text_field :email
     %div
-      %span.field_notice enter valid URL or leave this blank
+      %span.field_notice= t('comments.validations.url')
       = f.label :url, 'URL'
       = f.text_field :url
     %div
-      %span.field_notice required
+      %span.field_notice= t('comments.validations.comment')
       = f.label :content, 'Comment'
       = f.text_area :content, :rows => 10, :cols => 50
     %div

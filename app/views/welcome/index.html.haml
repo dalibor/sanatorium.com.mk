@@ -11,21 +11,22 @@
 
 #news
   #posts
-    %h2= t('posts.latest')
+    %h2.subtitle= t('posts.latest')
     %ul
       - @posts.each do |post|
         %li
           %article
             %header
               %h3
-                = post.title
+                = link_to post.t(:title), post
               %span.date= t('posts.time', :time => time_ago_in_words(post.published_at))
             %section
-              = truncate(strip_tags_with_space(post.content), :length => 300)
-              = link_to t('posts.read_more'), post_path(post)
+              %p
+                = truncate(strip_tags_with_space(post.t(:content)), :length => 300)
+                = link_to t('posts.read_more'), post_path(post)
 
   #twitter
-    %h2= t('twitter.latest')
+    %h2.subtitle= t('twitter.latest')
     #tweets
 
 - if @photos.present?

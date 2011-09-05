@@ -1,6 +1,7 @@
 %article.post
   %header
-    %h2= link_to post.title, post_path(post)
+    %h2
+      = link_to post.title, post_path(post)
     %div
       %time{:datetime => post.published_at}
         = t('posts.time', :time => time_ago_in_words(post.published_at))

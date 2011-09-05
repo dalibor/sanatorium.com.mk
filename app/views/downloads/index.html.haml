@@ -1,17 +1,23 @@
-%section.video
+%section.download.video
   %h2.title= t('downloads.video')
   %ul
     - @downloads['Video'].each do |download|
       %li= link_to download.t(:name), download.attachment_url
 
-%section.audio
+%section.download.audio
   %h2.title= t('downloads.audio')
   %ul
     - @downloads['Audio'].each do |download|
       %li= link_to download.t(:name), download.attachment_url
 
-%section.interview
+%section.download.interview
   %h2.title= t('downloads.interview')
   %ul
     - @downloads['Interview'].each do |download|
+      %li= link_to download.t(:name), download.attachment_url
+
+%section.download.tabs
+  %h2.title= t('downloads.tabs')
+  %ul
+    - @downloads['Tabs'].each do |download|
       %li= link_to download.t(:name), download.attachment_url

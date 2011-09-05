@@ -50,7 +50,7 @@
 
           ul.append(
             $('<li/>', {'class': liClass}).append(
-              $('<div/>').text(this.text).autolink(),
+              $('<p/>').text(this.text).autolink(),
               $('<i/>').append(
                 $('<a/>').attr({href: url, title: date,
                   'class': 'date', target: '_blank'}).timeago()

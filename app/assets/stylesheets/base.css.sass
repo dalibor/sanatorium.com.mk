@@ -44,11 +44,22 @@ h6
 
 
 /* REUSED PAGE STYLES BEGIN */
+
 h2.title
   margin: 0 0 15px 15px
+
+h2.subtitle
+  display: inline-block
+  border-bottom: 3px solid #931308
+
 /* REUSED PAGE STYLES END */
 
-
+.page_wrapper
+  p
+    margin-bottom: 40px
+  img
+    float: left
+    margin: 0 10px 10px 0
 
 #container
   width: 960px
@@ -126,7 +137,7 @@ header
     float: right
 
     ul
-      +horizontal-list
+      +horizontal-list(8px)
 /* FOOTER END */
 
 /* STICKY FOOTER BEGIN */
@@ -154,7 +165,8 @@ html, body
   #slider
     width: 550px
     float: left
-    //border: 1px solid #222
+    border-top: 5px solid #931308
+    border-bottom: 5px solid #931308
 
   #promo
     width: 370px
@@ -162,10 +174,13 @@ html, body
     text-align: center
 
     h2
+      display: inline-block
       font-size: 22px
       font-weight: bold
-      margin: 5px 0 10px
+      margin: 10px 0 15px
       color: #CCC
+      border-bottom: 5px solid #931308
+
       text-shadow: #DDD 0 1px 1px
     iframe
       //border: 1px solid #222
@@ -179,6 +194,10 @@ html, body
   #posts
     width: 550px
     float: left
+
+    p
+      a
+        font-style: italic
 
     ul
       margin: 10px 0 30px
@@ -196,10 +215,16 @@ html, body
     header span.date
       font-size: 0.9em
       font-weight: bold
+      margin-top: 3px
+      display: block
 
   #twitter
     width: 360px
     float: right
+
+    p
+      a
+        font-style: italic
 
     ul
       margin: 10px 0 30px
@@ -212,21 +237,24 @@ html, body
       list-style: none
     ul li i
       display: block
-      padding-top: 8px
+      padding-bottom: 10px
     ul li .date
       font-size: 0.9em
       font-weight: bold
 
 /* NEWS END */
 
+.posts_wrapper
+  margin-left: 50px
+
 .posts
-  width: 650px
+  width: 700px
   float: left
   margin-right: 20px
 
 
 article.post
-  width: 650px
+  width: 700px
   float: left
   margin-bottom: 35px
 
@@ -239,11 +267,11 @@ article.post
     margin-bottom: 1em
 
   header
-    background: #333
-    +border-radius(10px)
-    +box-shadow(#999, 1px, 2px, 3px)
+    //background: #333
+    //+border-radius(10px)
+    //+box-shadow(#999, 1px, 2px, 3px)
     margin-bottom: 15px
-    padding: 5px 15px
+    padding: 5px
     h2
       font-size: 24px
     div
@@ -262,8 +290,9 @@ article.post
 
       span
         word-spacing: 3px
+        margin-left: 10px
   section
-    border-bottom: 1px solid #CCC
+    border-bottom: 1px dashed #222
     padding: 10px 5px
 
     p
@@ -286,6 +315,7 @@ aside
   width: 650px
 
   h3
+    font-size: 18px
     margin-bottom: 20px
 
   ol
@@ -314,6 +344,7 @@ aside
 
 .comment_form
   h3
+    font-size: 18px
     margin-bottom: 1em
 
 label
@@ -327,7 +358,8 @@ span.field_notice
   display: block
   padding-left: 100px
   color: #666
-  font-size: 10px
+  font-size: 11px
+  margin-bottom: 3px
 
 .fieldWithErrors
   padding: 2px
@@ -366,7 +398,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
   margin-left: 100px
 
 
-/* GALLERIES BEGIN */
+/* GALLERIES/RELEASES BEGIN */
 
 ul.galleries
   overflow: hidden
@@ -376,6 +408,57 @@ ul.galleries
     width: 215px
     padding-left: 25px
     height: 200px
+    min-height: 265px
+    text-align: center
+
+    h3
+      margin-bottom: 10px
+      font-size: 11px
+      line-height: 18px
+      text-transform: uppercase
+      font-weight: bold
+
+    img
+      border: 1px solid #333
+
+    p
+      margin-top: 5px
+      font-size: 12px
+
+ul.gallery
+  li
+    float: left
+    padding: 20px 0 0 15px
+
+    img
+      border: 1px solid #333
+/* GALLERIES END */
+
+/* DOWNLOADS BEGIN */
+
+section.download
+  margin-left: 15px
+  float: left
+  width: 225px
+
+  ul
+    margin: 20px 0 30px 15px
+
+    li
+      margin: 5px 0
+
+/* DOWNLOADS END */
+
+/* RELEASES BEGIN */
+
+ul.releases
+  overflow: hidden
+
+  li
+    float: left
+    width: 450px
+    padding-left: 25px
+    height: 330px
     min-height: 250px
     text-align: center
 
@@ -390,28 +473,81 @@ ul.galleries
 
     p
       margin-top: 5px
-      font-size: 11px
+      font-size: 12px
 
-ul.gallery
-  li
-    float: left
-    padding: 20px 0 0 15px
-
-    img
-      border: 1px solid #333
-/* GALLERIES END */
-
-/* DOWNLOADS BEGIN */
-
-section
+section.release
   margin-left: 15px
   float: left
-  width: 300px
 
+section.cover
+  width: 500px
+  h2
+    text-transform: uppercase
+
+    span
+      font-size: 14px
+      margin-left: 5px
+
+  img
+    margin-left: 15px
+
+  p
+    margin: 30px 0 0 15px
+
+section.lyrics
+  width: 390px
+  margin: 40px 0 0 50px
   ul
-    margin: 20px 0 30px 15px
-
     li
-      margin: 5px 0
+      h3
+        margin-bottom: 5px
+        cursor: pointer
 
-/* DOWNLOADS END */
+        span
+          text-align: right
+          display: inline-block
+          width: 14px
+          margin-right: 10px
+
+      .song
+        display: none
+        margin-top: 10px
+        margin-bottom: 50px
+
+        p
+          margin-left: 25px
+
+/* RELEASES END */
+
+/* PAGINATION BEGIN */
+
+.pagination a, .pagination > span, .pagination em
+  padding: 2px 5px
+  margin-right: 5px
+  display: block
+  float: left
+  border-style: solid
+  border-width: 1px
+
+.pagination em
+  font-weight: bold
+
+.pagination a
+  text-decoration: none
+
+.pagination a, .pagination > span
+  -moz-border-radius: 3px
+  border: 1px solid #CCC
+
+.pagination em
+  background: #36393d
+  color: #FFF
+  border: 1px solid #36393d
+
+.pagination a
+  color: #999
+
+.pagination a:hover
+  border: 1px solid #666
+
+/* PAGINATION END */

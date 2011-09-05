@@ -1,23 +1,14 @@
+var releases_show = {
+  run: function () {
+    $('.songs h3').click(function (e) {
+      e.preventDefault()
+      $(e.target).next().toggle();
+    });
+  }
+}
+
 $(window).load(function() {
   $('#slider').nivoSlider();
-  //$('#slider').nivoSlider({
-    //effect:"boxRandom",
-    //slices:15,
-    //boxCols:8,
-    //boxRows:4,
-    //animSpeed:500,
-    //pauseTime:3000,
-    //startSlide:0,
-    //directionNav:true,
-    //directionNavHide:true,
-    //controlNav:true,
-    //controlNavThumbs:false,
-    //controlNavThumbsFromRel:true,
-    //keyboardNav:true,
-    //pauseOnHover:true,
-    //manualAdvance:false
-  //});
-
 
   $("#photos").thumbnailScroller({
     //scrollerType:"hoverPrecise",
@@ -42,7 +33,6 @@ $(function () {
     imageClickClose: false,
     disableNavbarLinks: true
   });
-
 
   // change default i18n for timeago if current locale is :mk
   if (window._locale === "mk") {
@@ -69,4 +59,12 @@ $(function () {
     username: 'SanatoriumMK',
     limit: 3
   });
+
+  var id = $('body').attr("id");
+  if (id) {
+    controller_action = id;
+    if (typeof(window[controller_action]) !== 'undefined' && typeof(window[controller_action]['run']) === 'function') {
+      window[controller_action]['run']();
+    }
+  }
 });

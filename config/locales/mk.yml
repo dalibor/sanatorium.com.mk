@@ -15,9 +15,31 @@ mk:
     published: "објевено"
     latest: "Последни новости"
     read_more: "прочитај повеќе »"
+    no_comments: "Оваа вест сеуште нема коментари."
+    comments: "Коментари"
+    leave_comment: "Постави коментар"
+
+  comments:
+    validations:
+      name: "задолжително"
+      email: "валиден емаил задолжителен, нема да биде објавен"
+      url: "внесете валидно URL или оставете празно"
+      comment: "задолжително"
 
   twitter:
-    latest: Последни твитови
+    latest: "Последни твитови"
+
+  downloads:
+    audio: "Аудио песни"
+    video: "Видео клипови"
+    interview: "Интервјуа"
+    tabs: "Таблатури"
+
+
+  will_paginate:
+    previous_label: "&#8592; Претходна"
+    next_label: "Следна &#8594;"
+    page_gap: "&hellip;"
 
   date:
     formats:

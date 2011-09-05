@@ -15,6 +15,10 @@ class Post < ActiveRecord::Base
   # Callbacks
   before_save :reset_published_at, :unless => Proc.new {|m| m.publish }
 
+  def to_param
+    "#{id}-#{t(:title).to_lat.parameterize}"
+  end
+
   private
 
     def reset_published_at

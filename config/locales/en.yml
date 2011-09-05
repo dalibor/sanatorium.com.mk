@@ -15,9 +15,30 @@ en:
     published: "published"
     latest: "Latest news"
     read_more: "read more »"
+    no_comments: "This article does not have any comments yet."
+    comments: "Comments"
+    leave_comment: "Leave a comment"
+
+  comments:
+    validations:
+      name: "required"
+      email: "valid email required, will not be published"
+      url: "enter valid URL or leave this blank"
+      comment: "required"
 
   twitter:
-    latest: Latest tweets
+    latest: "Latest tweets"
+
+  downloads:
+    audio: "Audio songs"
+    video: "Video clips"
+    interview: "Interview"
+    tabs: "Tabs"
+
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
 
   date:
     formats:

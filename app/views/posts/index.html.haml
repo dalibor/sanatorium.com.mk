@@ -1,7 +1,10 @@
 -#- title("Recent blog posts")
 
-.wrapper
+.posts_wrapper
   .posts
     = render :partial => 'post', :collection => @posts
+
+    .pagination
+      = will_paginate @posts
 
 

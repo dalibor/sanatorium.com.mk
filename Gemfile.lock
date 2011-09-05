@@ -82,6 +82,7 @@ GEM
       capybara (>= 1.0.0)
       cucumber (~> 1.0.0)
       nokogiri (>= 1.4.6)
+    cyrillizer (0.1.0)
     daemons (1.0.10)
     database_cleaner (0.6.7)
     diff-lcs (1.1.3)
@@ -246,6 +247,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   compass!
   cucumber-rails
+  cyrillizer
   database_cleaner
   factory_girl_rails
   guard-annotate

@@ -30,7 +30,7 @@
       Modernizr enables HTML5 elements &amp; feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
     = javascript_include_tag "modernizr"
-  %body
+  %body{:id => controller_action_id}
     #container
       %header.header
         = render :partial => 'layouts/header'

@@ -22,4 +22,11 @@ module ApplicationHelper
   def strip_tags_with_space(string)
     string.to_s.gsub(/<\/?[^>]*>/, " ").strip
   end
+
+  # Creates unique id for HTML document body used for unobtrusive javascript selectors
+  def controller_action_id
+    parts = controller.controller_path.split('/')
+    parts << controller.action_name
+    parts.join('_')
+  end
 end
