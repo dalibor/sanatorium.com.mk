@@ -4,7 +4,6 @@
       %h3
         = link_to gallery.name, gallery
         %span= "(#{gallery.photos_count})"
-      %p
-        = image_tag gallery.cover_url(:thumb)
-        = gallery.description
+      = link_to image_tag(gallery.cover_url(:thumb)), gallery
+      %p= gallery.description
 
