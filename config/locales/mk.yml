@@ -148,8 +148,11 @@ mk:
         one: 'околу 1 година'
         other: 'околу %{count} години'
       over_x_years:
-        one: 'над 1 година'
-        other: 'над %{count} години'
+        one: '1 година'
+        other: 'повеќе од %{count} години'
+      almost_x_years:
+        one: 'скоро 1 година'
+        other: 'скоро %{count} години'
 
   number:
     format:
