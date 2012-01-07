@@ -12,7 +12,7 @@ Sanatorium::Application.configure do
   config.static_cache_control = "public, max-age=3600"
 
   # Log error messages when you accidentally call methods on nil
-  config.whiny_nils = true
+  config.whiny_nils = false
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
@@ -36,7 +36,4 @@ Sanatorium::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
-
-  # in tests use en locale
-  config.i18n.default_locale = :en
 end

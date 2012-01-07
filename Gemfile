@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -27,6 +27,7 @@ gem 'will_paginate', '~> 3.0.0'
 gem 'acts_as_list'
 gem 'model_fields_i18n'
 gem 'cyrillizer'
+gem 'bcrypt-ruby', :require => 'bcrypt'
 
 
 # Use unicorn as the web server
@@ -61,7 +62,7 @@ group :test do
   gem 'pickle'
   gem 'launchy'
 
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork', '> 0.9.0.rc' # use bundler 1.0.21, problems with 1.0.18
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # patch for rake in rails 3, used by guard-annotate
 
   gem 'guard-rspec'
