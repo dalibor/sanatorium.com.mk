@@ -1,32 +1,38 @@
-#featured
-  #slider.slider-wrapper.theme-default
-    = image_tag "slider/1.jpg"
-    = image_tag "slider/2.jpg"
-    = image_tag "slider/3.jpg"
-    = image_tag "slider/4.jpg"
-    = image_tag "slider/5.jpg"
-  #promo
-    - if @video
-      = raw @video.t(:content)
+%section.featured
+  %article.promoPhotos
+    %header.hidden
+      %h2= t('global.featured_photos')
+    .slider-wrapper.theme-default
+      #slider.nivoSlider
+        = image_tag "slider/1.jpg"
+        = image_tag "slider/2.jpg"
+        = image_tag "slider/3.jpg"
+        = image_tag "slider/4.jpg"
+        = image_tag "slider/5.jpg"
 
-#news
-  #posts
-    %h2.subtitle= t('posts.latest')
+  %section.promoNews
+    %header
+      %h2.subtitleNews= t('posts.latest')
     %ul
       - @posts.each do |post|
         %li
           %article
             %header
-              %h3
-                = link_to post.t(:title), post
-              %span.date= t('posts.time', :time => time_ago_in_words(post.published_at))
-            %section
-              %p
-                = truncate(strip_tags_with_space(post.t(:content)), :length => 300)
-                = link_to t('posts.read_more'), post_path(post)
+              %h3= link_to post.t(:title), post
+            %footer
+              .date= post.published_at.to_s(:post)
+            %p
+              = truncate(strip_tags_with_space(post.t(:content)), :length => 180)
+              = link_to t('posts.read_more'), post_path(post)
 
-  #twitter
-    %h2.subtitle= t('twitter.latest')
+%section.promoSocial
+  %article.promoVideo
+    %h2.hidden= t('global.recent_video')
+    - if @video
+      = raw @video.t(:content)
+
+  %article.promoTwitter
+    %h2= t('twitter.latest')
     #tweets
 
 - if @photos.present?

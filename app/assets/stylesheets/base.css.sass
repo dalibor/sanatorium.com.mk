@@ -7,9 +7,11 @@ body
   font-size: 13px
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   background: url(image_path("bg.jpg")) no-repeat scroll center top #000
+  .hidden
+    display: none
 
 a, a:active, a:visited
-  color: #CCC
+  color: #AAA
   text-decoration: none
 
 a:hover, a:active, a:focus
@@ -78,9 +80,9 @@ h2.subtitle
   background-image: url(image_path("logo.png"))
 
 /* HEADER START */
-header
+header#header
   overflow: hidden
-  margin-bottom: 20px
+  margin-bottom: 40px
 
   h1
     float: left
@@ -125,7 +127,7 @@ header
 
 /* FOOTER BEGIN */
 
-.footer
+footer#footer
   margin-top: 20px
   padding-top: 55px
   background: url(image_path("footer.jpg")) no-repeat scroll center top
@@ -158,93 +160,104 @@ html, body
 /* STICKY FOOTER END */
 
 /* FEATURED BEGIN */
-#featured
+section.featured
   overflow: hidden
+  margin-bottom: 40px
   height: 400px
-  margin: 20px 0
 
-  #slider
-    width: 550px
+  article.promoPhotos
     float: left
-    border: 5px solid rgb(147, 19, 8)
-    border: 5px solid rgba(147, 19, 8, 0.2)
+    #slider
+      width: 550px
+      height: 350px
+      border: 5px solid rgba(150, 150, 150, 0.08)
+      &.nivoSlider
+        background: url(/images/loading.gif) no-repeat 50% 50%
+        +box-shadow(none)
+      .nivo-controlNav
+        bottom: -35px
 
-  #promo
-    width: 370px
-    float: right
-    text-align: center
-
-    h2
-      display: inline-block
-      font-size: 22px
-      font-weight: bold
-      margin: 10px 0 15px
-      color: #CCC
-      border-bottom: 5px solid rgb(147, 19, 8)
-      border-bottom: 5px solid rgba(147, 19, 8, 0.4)
-
-      text-shadow: #DDD 0 1px 1px
-    iframe
-      //border: 1px solid #222
-/* FEATURED END */
-
-/* NEWS BEGIN */
-#news
-  overflow: hidden
-  margin: 30px 0
-
-  #posts
-    width: 550px
+  section.promoNews
     float: left
-
-    p
-      a
-        font-style: italic
-
-    ul
-      margin: 10px 0 30px
-      padding: 0px
-    ul li
-      margin: 15px 5px 0 0
-      padding: 5px 0
-      overflow: hidden
-      border-bottom: 1px dashed #222
-      list-style: none
-    ul li i
-      display: block
-      padding-top: 8px
-
-    header span.date
-      font-size: 0.9em
-      font-weight: bold
-      margin-top: 3px
-      display: block
-
-  #twitter
     width: 360px
-    float: right
+    height: 340px
+    padding: 10px
+    margin-left: 20px
+    background: rgba(150, 150, 150, 0.08)
+    header
+      h2.subtitleNews
+        padding: 5px
+        background: rgba(147, 19, 8, 0.4)
+        margin-bottom: 15px
+    ul
+      li
+        margin-bottom: 5px
+        article
+          background: rgba(0, 0, 0, 0.6)
+          padding: 5px
+          margin-bottom: 8px
+          height: 130px
+          footer
+            .date
+              font-size: 0.7em
+              border-bottom: 1px dotted rgba(150, 150, 150, 0.08)
+              padding: 2px 0
+          p
+            padding-top: 4px
+        &:last-chlild
+          margin-bottom: 0
 
+section.promoSocial
+  clear: both
+  overflow: hidden
+  padding: 10px 0
+  margin-bottom: 40px
+  article.promoVideo
+    float: left
+    text-align: center
+    h2
+      font-size: 1em
+      padding: 5px
+      text-transform: uppercase
+      background: rgba(147, 19, 8, 0.4)
+    iframe
+      width: 550px !important
+      height: 350px !important
+
+  article.promoTwitter
+    float: left
+    background: rgba(150, 150, 150, 0.08)
+    width: 380px
+    height: 365px
+    padding-bottom: 10px
+    margin-left: 30px
+    h2
+      font-size: 1em
+      padding: 5px 10px
+      text-transform: uppercase
+      background: rgba(147, 19, 8, 0.4)
     p
+      margin-bottom: 1.2em
       a
         font-style: italic
-
     ul
-      margin: 10px 0 30px
+      margin: 10px 10px 30px
       padding: 0
     ul li
-      margin: 15px 5px 0 0
-      padding: 5px 0
+      background: rgba(0, 0, 0, 0.6)
+      margin-bottom: 5px
+      padding: 5px 10px
       overflow: hidden
-      border-bottom: 1px dashed #222
       list-style: none
     ul li i
       display: block
-      padding-bottom: 10px
+      border-top: 1px dotted rgba(150, 150, 150, 0.08)
     ul li .date
-      font-size: 0.9em
+      font-size: 0.8em
       font-weight: bold
 
-/* NEWS END */
+/* FEATURED END */
+
 
 .posts_wrapper
   margin-left: 50px

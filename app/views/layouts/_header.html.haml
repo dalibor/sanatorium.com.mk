@@ -4,6 +4,7 @@
 
 
   #main_nav
+    %h2.hidden= t('global.main_navigation')
     - if I18n.locale == :en
       .lang= link_to image_tag('mk.jpg'), '/mk.html', {:title => "Преведи на Македонски"}
     - else

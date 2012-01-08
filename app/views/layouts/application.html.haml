@@ -32,13 +32,13 @@
     = javascript_include_tag "html5/application"
   %body{:id => controller_action_id}
     #container
-      %header.header
+      %header#header
         = render :partial => 'layouts/header'
       .wrapper
         = render :partial => 'layouts/flashes'
         = yield
       .push
-    %footer.footer
+    %footer#footer
       .wrapper
         = render :partial => 'layouts/footer'
     / ! end of #container

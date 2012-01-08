@@ -2,6 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  global:
+    featured_photos: "Promo photos"
+    main_navigation: "Main navigation"
+    recent_video: "Recent video"
   menu:
     news: "News"
     band: "Band"

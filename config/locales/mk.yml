@@ -2,6 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 mk:
+  global:
+    featured_photos: "Промо фотографии"
+    main_navigation: "Главна навигација"
+    recent_video: "Последно видео"
   menu:
     news: "Новости"
     band: "Бенд"
