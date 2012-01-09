@@ -15,7 +15,7 @@ a, a:active, a:visited
   text-decoration: none
 
 a:hover, a:active, a:focus
-  color: #931308
+  color: #FFF
   text-decoration: none
 
 //p + p
@@ -159,7 +159,7 @@ html, body
   height: 101px
 /* STICKY FOOTER END */
 
-/* FEATURED BEGIN */
+/* FRONT PAGE BEGIN */
 section.featured
   overflow: hidden
   margin-bottom: 40px
@@ -177,6 +177,7 @@ section.featured
         +box-shadow(none)
       .nivo-controlNav
         bottom: -35px
+
   section.promoNews
     float: left
     background: rgba(0, 0, 0, 0.6)
@@ -271,8 +272,7 @@ section.promoSocial
   background: rgba(150, 150, 150, 0.08)
   +border-bottom-radius(22px)
 
-
-/* FEATURED END */
+/* FRONT PAGE END */
 
 
 .posts_wrapper
@@ -433,16 +433,24 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
 
 ul.galleries
   overflow: hidden
+  background: rgba(150, 150, 150, 0.08)
+  margin: 0
+  padding: 20px 10px 10px 10px
 
   li
     float: left
     width: 215px
-    padding-left: 25px
+    margin: 0 0 15px 15px
+    padding: 4px
     height: 200px
-    min-height: 265px
+    min-height: 245px
     text-align: center
+    background: rgba(0, 0, 0, 0.6)
+    &:nth-child(4n+1)
+      margin-left: 2px
 
     h3
+      background: rgba(147, 19, 8, 0.4)
       margin-bottom: 10px
       font-size: 11px
       line-height: 18px

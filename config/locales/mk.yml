@@ -6,6 +6,7 @@ mk:
     featured_photos: "Промо фотографии"
     main_navigation: "Главна навигација"
     recent_video: "Последно видео"
+    galleries: "Галерии"
   menu:
     news: "Новости"
     band: "Бенд"
