@@ -7,6 +7,8 @@ mk:
     main_navigation: "Главна навигација"
     recent_video: "Последно видео"
     galleries: "Галерии"
+    downloads: "Медиа"
+
   menu:
     news: "Новости"
     band: "Бенд"

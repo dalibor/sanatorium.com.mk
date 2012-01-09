@@ -47,9 +47,14 @@ h6
 
 /* REUSED PAGE STYLES BEGIN */
 
-h2.title
-  padding: 5px 10px
+h2.title, h3.title
+  overflow: hidden
+  font-size: 1.2em
+  height: 16px
+  padding: 6px 10px
+  text-transform: uppercase
   background: rgba(147, 19, 8, 0.4)
+  font-weight: bold
 
 h2.subtitle
   display: inline-block
@@ -495,16 +500,22 @@ ul.gallery
 
 /* DOWNLOADS BEGIN */
 
-section.download
-  margin-left: 15px
-  float: left
-  width: 225px
+section.downloads
+  overflow: hidden
+  padding: 20px 10px
+  background: rgba(150, 150, 150, 0.08)
+  article.download
+    margin-left: 12px
+    float: left
+    width: 220px
+    height: 300px
+    background: rgba(0, 0, 0, 0.4)
 
-  ul
-    margin: 20px 0 30px 15px
+    ul
+      margin: 20px 0 30px 15px
 
-    li
-      margin: 5px 0
+      li
+        margin: 5px 0
 
 /* DOWNLOADS END */
 
