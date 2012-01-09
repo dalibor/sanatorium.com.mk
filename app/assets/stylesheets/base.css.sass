@@ -163,62 +163,65 @@ html, body
 section.featured
   overflow: hidden
   margin-bottom: 40px
-  height: 400px
-
+  height: 380px
+  padding: 10px
+  background: rgba(150, 150, 150, 0.08)
+  +border-top-radius(15px)
   article.promoPhotos
     float: left
     #slider
       width: 550px
       height: 350px
-      border: 5px solid rgba(150, 150, 150, 0.08)
       &.nivoSlider
         background: url(/images/loading.gif) no-repeat 50% 50%
         +box-shadow(none)
       .nivo-controlNav
         bottom: -35px
-
   section.promoNews
     float: left
+    background: rgba(0, 0, 0, 0.6)
+    +border-top-right-radius(12px)
     width: 360px
-    height: 340px
-    padding: 10px
-    margin-left: 20px
-    background: rgba(150, 150, 150, 0.08)
+    height: 330px
+    padding: 10px 10px 10px 20px
     header
       h2.subtitleNews
-        padding: 5px
+        +border-top-right-radius(8px)
+        padding: 5px 8px
+        text-transform: uppercase
+        font-size: 1.2em
         background: rgba(147, 19, 8, 0.4)
         margin-bottom: 15px
     ul
       li
-        margin-bottom: 5px
+        margin-bottom: 10px
         article
-          background: rgba(0, 0, 0, 0.6)
-          padding: 5px
+          background: rgba(150, 150, 150, 0.08)
+          padding: 8px
           margin-bottom: 8px
-          height: 130px
+          height: 122px
           footer
             .date
               font-size: 0.7em
-              border-bottom: 1px dotted rgba(150, 150, 150, 0.08)
-              padding: 2px 0
+              border-bottom: 1px dotted rgba(0, 0, 0, 0.6)
+              padding: 4px 0 2px 2px
           p
             padding-top: 4px
-        &:last-chlild
-          margin-bottom: 0
 
 section.promoSocial
   clear: both
   overflow: hidden
-  padding: 10px 0
-  margin-bottom: 40px
+  margin: 40px 0
   article.promoVideo
     float: left
-    text-align: center
+    img
+      background: rgba(147, 19, 8, 0.4)
+      float: left
     h2
-      font-size: 1em
-      padding: 5px
-      text-transform: uppercase
+      overflow: hidden
+      font-size: 1.1em
+      padding: 8px 6px 4px 20px
+      height: 16px
       background: rgba(147, 19, 8, 0.4)
     iframe
       width: 550px !important
@@ -226,26 +229,34 @@ section.promoSocial
 
   article.promoTwitter
     float: left
-    background: rgba(150, 150, 150, 0.08)
     width: 380px
-    height: 365px
     padding-bottom: 10px
     margin-left: 30px
     h2
-      font-size: 1em
-      padding: 5px 10px
+      overflow: hidden
+      font-size: 1.2em
+      height: 16px
+      padding: 6px 10px
       text-transform: uppercase
       background: rgba(147, 19, 8, 0.4)
+    img
+      float: right
+      background: rgba(147, 19, 8, 0.4)
     p
-      margin-bottom: 1.2em
+      margin-bottom: 1.1em
+      height: 60px
       a
         font-style: italic
     ul
-      margin: 10px 10px 30px
-      padding: 0
+      background: rgba(150, 150, 150, 0.08)
+      padding: 18px 10px 10px 10px
+      height: 322px
     ul li
       background: rgba(0, 0, 0, 0.6)
-      margin-bottom: 5px
+      +border-top-right-radius(8px)
+      +border-bottom-left-radius(8px)
+      height: 90px
+      margin-bottom: 10px
       padding: 5px 10px
       overflow: hidden
       list-style: none
@@ -255,6 +266,11 @@ section.promoSocial
     ul li .date
       font-size: 0.8em
       font-weight: bold
+
+#photos
+  background: rgba(150, 150, 150, 0.08)
+  +border-bottom-radius(22px)
+
 
 /* FEATURED END */
 

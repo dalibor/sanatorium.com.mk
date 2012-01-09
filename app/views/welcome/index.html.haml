@@ -22,16 +22,18 @@
             %footer
               .date= post.published_at.to_s(:post)
             %p
-              = truncate(strip_tags_with_space(post.t(:content)), :length => 180)
+              = truncate(strip_tags_with_space(post.t(:content)), :length => 150)
               = link_to t('posts.read_more'), post_path(post)
 
 %section.promoSocial
   %article.promoVideo
     %h2.hidden= t('global.recent_video')
     - if @video
+      = link_to image_tag('youtube-icon.png'), "http://www.youtube.com/user/sanatorium2011", :target => 'blank'
       = raw @video.t(:content)
 
   %article.promoTwitter
+    = link_to image_tag('twitter-icon.png'), "https://twitter.com/#!/SanatoriumMK"
     %h2= t('twitter.latest')
     #tweets
 
@@ -43,3 +45,4 @@
           = link_to image_tag(photo.image_url(:medium)), photo.image_url, :class => "lightbox", :rel => "lightbox"
     = link_to "", "#", :class => "jTscrollerPrevButton"
     = link_to "", "#", :class => "jTscrollerNextButton"
+
