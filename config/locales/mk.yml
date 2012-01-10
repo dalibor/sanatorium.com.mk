@@ -8,6 +8,7 @@ mk:
     recent_video: "Последно видео"
     galleries: "Галерии"
     downloads: "Медиа"
+    releases: "Изданија"
 
   menu:
     news: "Новости"
