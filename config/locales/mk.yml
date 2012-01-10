@@ -9,6 +9,7 @@ mk:
     galleries: "Галерии"
     downloads: "Медиа"
     releases: "Изданија"
+    track_list: "Листа на песни"
 
   menu:
     news: "Новости"
