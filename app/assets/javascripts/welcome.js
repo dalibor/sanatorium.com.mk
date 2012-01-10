@@ -57,7 +57,7 @@ $(function () {
 
   $('#tweets').tweets({
     username: 'SanatoriumMK',
-    limit: 3
+    limit: 4
   });
 
   var id = $('body').attr("id");
