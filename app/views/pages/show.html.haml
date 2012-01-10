@@ -1,1 +1,5 @@
-.page_wrapper= raw @page.t(:content)
+.pageWrapper
+  %article.biography
+    %header
+      %h2.title= t('global.biography')
+    = raw @page.t(:content)
