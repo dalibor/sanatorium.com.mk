@@ -20,6 +20,7 @@
             %header
               %h3= link_to post.t(:title), post
             %footer
+              %time{:datetime => post.published_at}
               .date= post.published_at.to_s(:post)
             %p
               = truncate(strip_tags_with_space(post.t(:content)), :length => 150)

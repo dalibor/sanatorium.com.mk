@@ -1,11 +1,9 @@
 %article.post
   %header
-    %h2
+    %h2.titlePost
       = link_to post.title, post_path(post)
-    %div
-      %time{:datetime => post.published_at}
-        = post.published_at.to_s(:post)
-      %span= link_to pluralize(post.comments_count, 'Comment'), post_path(post) + '#comments'
-
-  %section
+  %footer
+    %time{:datetime => post.published_at}
+      = post.published_at.to_s(:post)
+  .postContent
     = raw find_and_preserve(post.content)

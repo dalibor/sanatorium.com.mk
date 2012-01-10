@@ -3,7 +3,7 @@
     %header
       %h2.title
         = @release.t(:name)
-        %span= "#{@release.year} #{@release.label}"
+        %span= "#{@release.year}, #{@release.label}"
 
     .cover= image_tag @release.cover_url
     %footer
