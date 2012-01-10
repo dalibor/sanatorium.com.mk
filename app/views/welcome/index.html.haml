@@ -12,7 +12,7 @@
 
   %section.promoNews
     %header
-      %h2.titleNews= t('posts.latest')
+      %h2.title= t('posts.latest')
     %ul
       - @posts.each do |post|
         %li
@@ -34,7 +34,7 @@
 
   %article.promoTwitter
     = link_to image_tag('twitter-icon.png'), "https://twitter.com/#!/SanatoriumMK"
-    %h2= t('twitter.latest')
+    %h2.title= t('twitter.latest')
     #tweets
 
 - if @photos.present?

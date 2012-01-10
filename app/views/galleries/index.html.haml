@@ -1,10 +1,14 @@
-%h2.hidden= t('global.galleries')
-%ul.galleries
-  - @galleries.each do |gallery|
-    %li
-      %h3
-        = link_to gallery.name, gallery
-        %span= "(#{gallery.photos_count})"
-      = link_to image_tag(gallery.cover_url(:thumb)), gallery
-      %p= gallery.description
+%section.galleries
+  %h2.hidden= t('global.galleries')
+  %ul
+    - @galleries.each do |gallery|
+      %li
+        %article
+          %header
+            %h3
+              = link_to gallery.name, gallery
+              %span= "(#{gallery.photos_count})"
+          = link_to image_tag(gallery.cover_url(:thumb)), gallery
+          %footer
+            %p= gallery.description
 
