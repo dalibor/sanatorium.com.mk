@@ -1,8 +1,8 @@
 - title(t('menu.home'))
 %section.featured
+  %h2.hidden= t('global.featured')
   %article.promoPhotos
-    %header.hidden
-      %h2= t('global.featured_photos')
+    %h3.hidden= t('global.featured_photos')
     .slider-wrapper.theme-default
       #slider.nivoSlider
         = image_tag "slider/1.jpg"
@@ -13,7 +13,7 @@
 
   %section.promoNews
     %header
-      %h2.title= t('posts.latest')
+      %h3.title= t('posts.latest')
     %ul
       - @posts.each do |post|
         %li
@@ -27,16 +27,17 @@
               = truncate(strip_tags_with_space(post.t(:content)), :length => 150)
               = link_to t('posts.read_more'), post_path(post)
 
-%section.promoSocial
+%section.socialMedia
+  %h2.hidden= t('global.social_media')
   %article.promoVideo
-    %h2.hidden= t('global.recent_video')
+    %h3.hidden= t('global.recent_video')
     - if @video
       = link_to image_tag('youtube-icon.png'), "http://www.youtube.com/user/sanatorium2011", :target => 'blank'
       = raw @video.t(:content)
 
   %article.promoTwitter
     = link_to image_tag('twitter-icon.png'), "https://twitter.com/#!/SanatoriumMK"
-    %h2.title= t('twitter.latest')
+    %h3.title= t('twitter.latest')
     #tweets
 
 - if @photos.present?

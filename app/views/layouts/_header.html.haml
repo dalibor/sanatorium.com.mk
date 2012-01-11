@@ -4,13 +4,14 @@
 
 
   #main_nav
-    %h2.hidden= t('global.main_navigation')
+    %h2.hidden= t('global.change_language')
     - if I18n.locale == :en
       .lang= link_to image_tag('mk.jpg'), '/mk.html', {:title => "Преведи на Македонски"}
     - else
       .lang= link_to image_tag('en.jpg'), '/en.html', {:title => "Translate to English"}
 
     %nav
+      %h2.hidden= t('global.main_navigation')
       %ul
         %li= link_to t('menu.news'), posts_path
         %li= link_to t('menu.band'), band_path

@@ -3,8 +3,11 @@
 
 en:
   global:
+    featured: "Featured news and photos"
     featured_photos: "Promo photos"
+    change_language: "Change language"
     main_navigation: "Main navigation"
+    social_media: "Друштвени медиуми"
     recent_video: "Recent video"
     biography: "Biography"
     galleries: "Galleries"

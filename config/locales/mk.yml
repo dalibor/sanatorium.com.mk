@@ -3,8 +3,11 @@
 
 mk:
   global:
+    featured: "Најзначајни новости и фотографии"
     featured_photos: "Промо фотографии"
+    change_language: "Промени јазик"
     main_navigation: "Главна навигација"
+    social_media: "Друштвени медиуми"
     recent_video: "Последно видео"
     biography: "Биографија"
     galleries: "Галерии"

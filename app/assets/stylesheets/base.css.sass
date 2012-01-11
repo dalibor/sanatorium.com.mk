@@ -114,21 +114,13 @@ header#header
 /* HEADER END */
 
 /* FOOTER BEGIN */
-
 footer#footer
   margin-top: 20px
   padding-top: 55px
   background: url(image_path("footer.jpg")) no-repeat scroll center top
   height: 26px
-
   .copyright
     float: left
-
-  nav
-    float: right
-
-    ul
-      +horizontal-list(8px)
 /* FOOTER END */
 
 /* STICKY FOOTER BEGIN */
@@ -171,14 +163,14 @@ section.featured
     height: 330px
     padding: 10px 10px 10px 20px
     header
-      h2
-        margin-bottom: 14px
+      h3
+        margin-bottom: 4px
     ul
       li
         background: rgba(150, 150, 150, 0.08)
         margin-bottom: 4px
         padding: 8px
-        height: 125px
+        height: 130px
         article
           footer
             .date
@@ -189,7 +181,7 @@ section.featured
             padding-top: 4px
             margin-bottom: 1em
 
-section.promoSocial
+section.socialMedia
   clear: both
   overflow: hidden
   margin: 40px 0
@@ -199,12 +191,13 @@ section.promoSocial
       background: rgba(147, 19, 8, 0.4)
       float: left
       height: 31px
-    h2
+    h4
       overflow: hidden
       font-size: 1.2em
       padding: 6px 10px
       background: rgba(147, 19, 8, 0.4)
       font-weight: bold
+      text-transform: none
     iframe
       width: 560px !important
       height: 350px !important
