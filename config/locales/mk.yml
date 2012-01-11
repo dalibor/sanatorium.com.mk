@@ -13,6 +13,7 @@ mk:
     track_list: "Листа на песни"
 
   menu:
+    home: "Насловна"
     news: "Новости"
     band: "Бенд"
     photos: "Галерија"
