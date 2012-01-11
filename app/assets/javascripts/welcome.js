@@ -8,7 +8,10 @@ var releases_show = {
 }
 
 $(window).load(function() {
-  $('#slider').nivoSlider();
+  $('#slider').nivoSlider({
+    effect: "fade",
+    pauseTime: 5000
+  });
 
   $("#photos").thumbnailScroller({
     //scrollerType:"hoverPrecise",
