@@ -15,6 +15,7 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'compass', '~> 0.12.alpha.0'
+  gem 'therubyracer', '=0.10.1'
 end
 
 gem 'jquery-rails'
@@ -72,10 +73,4 @@ group :test do
   gem 'guard-cucumber'
   gem 'libnotify'
   gem 'rb-inotify'
-end
-
-group :production do
-  # Could not find a JavaScript runtime.
-  # http://stackoverflow.com/questions/6075961/problem-deploying-rails-3-1-project-to-heroku-could-not-find-a-javascript-runtim
-  gem 'therubyracer-heroku', '0.8.1.pre3' # minimizes assets
 end
