@@ -37,32 +37,6 @@ $(function () {
     disableNavbarLinks: true
   });
 
-  // change default i18n for timeago if current locale is :mk
-  if (window._locale === "mk") {
-    jQuery.timeago.settings.strings = {
-      prefixAgo: "пред",
-      prefixFromNow: "после",
-      suffixAgo: null,
-      suffixFromNow: null,
-      seconds: "помалку од минута",
-      minute: "една минута",
-      minutes: "%d минути",
-      hour: "еден час",
-      hours: "%d часа",
-      day: "едeн ден",
-      days: "%d денови",
-      month: "еден месец",
-      months: "%d месеци",
-      year: "една година",
-      years: "%d години"
-    };
-  }
-
-  $('#tweets').tweets({
-    username: 'SanatoriumMK',
-    limit: 4
-  });
-
   var id = $('body').attr("id");
   if (id) {
     controller_action = id;

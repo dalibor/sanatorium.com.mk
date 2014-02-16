@@ -1,44 +1,46 @@
 - title(t('menu.home'))
-%section.featured
-  %h2.hidden= t('global.featured')
-  %article.promoPhotos
-    %h3.hidden= t('global.featured_photos')
-    .slider-wrapper.theme-default
-      #slider.nivoSlider
-        = image_tag "slider/1.jpg"
-        = image_tag "slider/2.jpg"
-        = image_tag "slider/3.jpg"
-        = image_tag "slider/4.jpg"
-        = image_tag "slider/5.jpg"
 
-  %section.promoNews
-    %header
-      %h3.title= t('posts.latest')
-    %ul
-      - @posts.each do |post|
-        %li
-          %article
-            %header
-              %h3= link_to post.t(:title), post
-            %footer
-              %time{:datetime => post.published_at}
-              .date= post.published_at.to_s(:post)
-            %p
-              = truncate(strip_tags_with_space(post.t(:content)), :length => 150)
-              = link_to t('posts.read_more'), post_path(post)
+#homegape
+  %section.main
+    %section.featured
+      %h2.hidden= t('global.featured')
+      %article.promoPhotos
+        %h3.hidden= t('global.featured_photos')
+        .slider-wrapper.theme-default
+          #slider.nivoSlider
+            = image_tag "slider/1.jpg"
+            = image_tag "slider/2.jpg"
+            = image_tag "slider/3.jpg"
+            = image_tag "slider/4.jpg"
+            = image_tag "slider/5.jpg"
 
-%section.socialMedia
-  %h2.hidden= t('global.social_media')
-  %article.promoVideo
-    %h3.hidden= t('global.recent_video')
-    - if @video
-      = link_to image_tag('youtube-icon.png'), "http://www.youtube.com/user/sanatorium2011", :target => 'blank'
-      = raw @video.t(:content)
+    %section.socialMedia
+      %h2.hidden= t('global.social_media')
+      %article.promoVideo
+        %h3.hidden= t('global.recent_video')
+        - if @video
+          = link_to image_tag('youtube-icon.png'), "http://www.youtube.com/user/sanatorium2011", :target => 'blank'
+          = raw @video.t(:content)
 
-  %article.promoTwitter
-    = link_to image_tag('twitter-icon.png'), "https://twitter.com/#!/SanatoriumMK"
-    %h3.title= t('twitter.latest')
-    #tweets
+
+  %sidebar.sidebar
+    %section.promoNews
+      %header
+        %h3.title= t('posts.latest')
+      %ul
+        - @posts.each do |post|
+          %li
+            %article
+              %header
+                %h3= link_to post.t(:title), post
+              %footer
+                %time{:datetime => post.published_at}
+                .date= post.published_at.to_s(:post)
+              %p
+                = truncate(strip_tags_with_space(post.t(:content)), :length => 150)
+                %br
+                = link_to t('posts.read_more'), post_path(post)
+
 
 - if @photos.present?
   #photos.jThumbnailScroller

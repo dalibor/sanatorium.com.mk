@@ -40,9 +40,6 @@ en:
       url: "enter valid URL or leave this blank"
       comment: "required"
 
-  twitter:
-    latest: "Latest tweets"
-
   downloads:
     audio: "Audio songs"
     video: "Video clips"
