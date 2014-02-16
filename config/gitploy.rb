@@ -6,7 +6,7 @@ configure do |c|
   stage :production do
     c.host = '97.107.140.182'
     c.user = 'deployer'
-    c.local_branch = 'dev' # default is current branch
+    c.local_branch = 'master' # default is current branch
     c.remote_branch = 'master' # default is master
   end
 end
