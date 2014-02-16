@@ -1,11 +1,9 @@
 jQuery(function() {
   jQuery(".wymeditor").wymeditor({
-    basePath: "/assets/wymeditor/",
-    iframeBasePath: "/assets/wymeditor/iframe/default/",
-    skinPath: "/assets/wymeditor/skins/default/",
-    jQueryPath: "/assets/application.js",
-    jQueryPath: '/assets/jquery.js',
-    wymPath: '/assets/wymeditor/jquery.wymeditor.js'
+    basePath: "/wymeditor/",
+    iframeBasePath: "/wymeditor/iframe/default/",
+    skinPath: "/wymeditor/skins/default/",
+    wymPath: "/assets/admin/application.js"
   });
 
   jQuery('form').submit(function () {
