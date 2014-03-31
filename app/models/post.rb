@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
   before_save :reset_published_at, :unless => Proc.new {|m| m.publish }
 
   def to_param
-    "#{id}-#{t(:title).to_lat.parameterize}"
+    "#{id}-#{t(:title).to_s.to_lat.parameterize}"
   end
 
   private
