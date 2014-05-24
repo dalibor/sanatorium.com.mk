@@ -7,8 +7,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post     = Post.where('published_at IS NOT NULL').find(params[:id])
-    @comments = @post.comments.where({:approved => true})
-    @comment  = Comment.new
+    @post = Post.where('published_at IS NOT NULL').find(params[:id])
   end
 end

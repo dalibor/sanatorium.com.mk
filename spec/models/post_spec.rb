@@ -15,7 +15,6 @@ describe Post do
 
   describe "Associations" do
     it { should belong_to :user }
-    it { should have_many :comments }
   end
 
   describe 'Validations' do
@@ -46,24 +45,6 @@ describe Post do
       post.title = 'New title'
       post.save!
       post.published_at.should == published_at
-    end
-  end
-
-  describe "comments count" do
-    it "counts only approved comments" do
-      post = Factory(:post)
-
-      comment1 = Factory(:comment, :post => post)
-      post.reload.comments_count.should == 1
-
-      comment2 = Factory(:comment, :post => post)
-      post.reload.comments_count.should == 2
-
-      comment2.update_attribute(:approved, false)
-      post.reload.comments_count.should == 1
-
-      comment1.destroy
-      post.reload.comments_count.should == 0
     end
   end
 end
