@@ -4,15 +4,3 @@
 
   .comments
     = render 'shared/disqus'
-
-  -# .comments
-  -#   %a{:name => "comments"}
-  -#   %h3= t('posts.comments')
-  -#   - if @post.comments.size > 0
-  -#     %ol
-  -#       = render :partial => 'comments/comment', :collection => @comments
-  -#   - else
-  -#     %p= t('posts.no_comments')
-
-  -# .comment_form
-  -#   = render :partial => 'comments/form'
