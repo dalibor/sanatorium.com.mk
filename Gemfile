@@ -21,7 +21,7 @@ end
 gem 'jquery-rails'
 gem 'modernizr-rails'
 gem 'haml'
-gem 'inherited_resources' # blog engine dependency
+gem 'inherited_resources'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'will_paginate', '~> 3.0.0'
@@ -62,15 +62,4 @@ group :test do
   gem 'database_cleaner'
   gem 'pickle'
   gem 'launchy'
-
-  gem 'spork', '> 0.9.0.rc' # use bundler 1.0.21, problems with 1.0.18
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # patch for rake in rails 3, used by guard-annotate
-
-  gem 'guard-rspec'
-  gem 'guard-bundler'
-  gem 'guard-annotate'
-  gem 'guard-spork'
-  gem 'guard-cucumber'
-  gem 'libnotify'
-  gem 'rb-inotify'
 end
