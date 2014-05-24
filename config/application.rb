@@ -75,3 +75,6 @@ module Sanatorium
 end
 
 Time::DATE_FORMATS[:post] = "%d. %m. %Y %H:%M"
+
+# load settings
+APP_CONFIG = YAML.load_file("#{Rails.root}/config/config.yml")[Rails.env]
