@@ -209,4 +209,12 @@ mk:
         odd: "мора да биде непарно"
         even: "мора да биде парно"
 
-
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} was successfully created."
+      update:
+        notice: "%{resource_name} was successfully updated."
+      destroy:
+        notice: "%{resource_name} was successfully destroyed."
+        alert: "%{resource_name} could not be destroyed."
