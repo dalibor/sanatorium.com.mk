@@ -7,7 +7,6 @@ Sanatorium::Application.routes.draw do
     root :to => 'welcome#index'
     resources :users, :except => [:show, :destroy]
     resources :posts
-    resources :comments
     resources :galleries do
       member do
         put :move_higher
@@ -45,9 +44,7 @@ Sanatorium::Application.routes.draw do
     get '/band', :to => 'pages#show', :id => 'band'
 
     resource :session, :only => [:new, :create, :destroy]
-    resources :posts, :only => [:show] do
-      resources :comments, :only => [:create]
-    end
+    resources :posts, :only => [:show]
     get "posts(/page/:page)" => "posts#index", :as => :posts
     resources :downloads, :only => [:index]
     resources :galleries, :only => [:index, :show]

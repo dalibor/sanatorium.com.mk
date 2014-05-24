@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_language
 
   def default_url_options
-    { :format => 'html', :lang => I18n.locale }
+    { :lang => I18n.locale }
   end
 
   private
@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
       raise ActionController::RoutingError.new('Not Found')
     end
 
-    I18n.locale = params[:lang] ||= :mk
+    I18n.locale = params[:lang] || session[:lang].presence || :mk
     session[:lang] = I18n.locale
   end
 end

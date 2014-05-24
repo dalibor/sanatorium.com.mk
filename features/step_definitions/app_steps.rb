@@ -1,7 +1,8 @@
 Given /^I am signed in as "([^"]*)"$/ do |email|
   steps %Q{
     Given an admin exists
-    When I go to the login page
+    When I go to the home page
+      And I go to the login page
       And I fill in "Email" with "#{email}"
       And I fill in "Password" with "password"
       And I press "Login"

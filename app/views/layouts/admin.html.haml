@@ -20,8 +20,6 @@
               %a{:href => admin_users_path} Users
             %li{:class => controller.controller_path == 'admin/posts' ? 'active' : ''}
               %a{:href => admin_posts_url} Posts
-            %li{:class => controller.controller_path == 'admin/comments' ? 'active' : ''}
-              %a{:href => admin_comments_url} Comments
             %li{:class => controller.controller_path.in?(['admin/galleries', 'admin/photos']) ? 'active' : ''}
               %a{:href => admin_galleries_url} Galleries
             %li{:class => controller.controller_path == 'admin/downloads' ? 'active' : '' }
@@ -42,6 +40,6 @@
           #footer
             .block
               %p
-                Copyright &copy; #{Time.now.year} sanatorium.com.mk.
+                Copyright &copy; 2002 - #{Time.now.year} sanatorium.com.mk.
         #sidebar
           = yield :sidebar

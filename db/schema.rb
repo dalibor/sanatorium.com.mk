@@ -11,25 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110904143335) do
+ActiveRecord::Schema.define(:version => 20140524213530) do
 
   create_table "attachments", :force => true do |t|
     t.string   "name"
     t.string   "attachment"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "comments", :force => true do |t|
-    t.integer  "post_id"
-    t.string   "name"
-    t.string   "email"
-    t.string   "url"
-    t.text     "content"
-    t.string   "user_ip"
-    t.string   "user_agent"
-    t.string   "referrer"
-    t.boolean  "approved",   :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -81,7 +67,6 @@ ActiveRecord::Schema.define(:version => 20110904143335) do
     t.string   "description"
     t.boolean  "publish"
     t.datetime "published_at"
-    t.integer  "comments_count", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title_en"

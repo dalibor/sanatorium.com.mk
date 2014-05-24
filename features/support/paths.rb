@@ -9,7 +9,7 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/'
+      '/en'
     when /^the login page$/
       login_path
     when /^the admin welcome page$/

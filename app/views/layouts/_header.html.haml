@@ -1,14 +1,14 @@
 .wrapper
-  = link_to "/#{I18n.locale}.html" do
+  = link_to root_path do
     %h1#logo.ir Sanatorium
 
 
   #main_nav
     %h2.hidden= t('global.change_language')
     - if I18n.locale == :en
-      .lang= link_to image_tag('mk.jpg'), '/mk.html', {:title => "Преведи на Македонски"}
+      .lang= link_to image_tag('mk.jpg'), root_path(lang: 'mk', format: nil), {:title => "Преведи на Македонски"}
     - else
-      .lang= link_to image_tag('en.jpg'), '/en.html', {:title => "Translate to English"}
+      .lang= link_to image_tag('en.jpg'), root_path(lang: 'en', format: nil), {:title => "Translate to English"}
 
     %nav
       %h2.hidden= t('global.main_navigation')
