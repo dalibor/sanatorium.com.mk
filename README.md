@@ -1,3 +1,5 @@
+![Travis status](https://travis-ci.org/dalibor/sanatorium.com.mk.png)
+
 # Sanatorium Official Website
 
 * http://sanatorium.com.mk
