@@ -1,10 +1,9 @@
 require 'gitploy/script'
 
 configure do |c|
-  c.path = '/home/deployer/www/sanatorium.com.mk'
-
   stage :production do
-    c.host = '97.107.140.182'
+    c.path = '/home/deployer/www/sanatorium.com.mk'
+    c.host = '107.170.47.48'
     c.user = 'deployer'
     c.local_branch = 'master' # default is current branch
     c.remote_branch = 'master' # default is master
