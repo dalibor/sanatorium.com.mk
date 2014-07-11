@@ -34,7 +34,8 @@ $(function () {
   $(".lightbox").lightbox({
     fitToScreen: true,
     imageClickClose: false,
-    disableNavbarLinks: true
+    disableNavbarLinks: true,
+    displayDownloadLink: true
   });
 
   var id = $('body').attr("id");
