@@ -4,11 +4,15 @@ module ApplicationHelper
   end
 
   def keywords(page_keywords)
-    content_for(:keywords) { page_keywords } unless page_keywords.blank?
+    content_for(:keywords) { page_keywords } if page_keywords.present?
   end
 
   def description(page_description)
-    content_for(:description) { page_description } unless page_description.blank?
+    content_for(:description) { page_description } if page_description.present?
+  end
+
+  def head(head_content)
+    content_for(:head) { head_content } if head_content.present?
   end
 
   #def javascript(*files)

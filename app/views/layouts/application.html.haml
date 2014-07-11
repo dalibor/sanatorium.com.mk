@@ -23,6 +23,7 @@
     / Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
     / CSS: implied media="all"
     %link{ :href => "/favicon.ico", :rel => "shortcut icon" }/
+    = yield(:head)
     = stylesheet_link_tag "application"
     /[if IE]
 
