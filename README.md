@@ -10,16 +10,17 @@
 Setup database
 
 ```
-rake db:create
-rake db:migrate
-rake db:seed
+cp config/database.yml.template config/database.yml
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:seed
 ```
 
 Run tests
 
 ```
-rspec spec
-cucumber features
+bundle exec rspec spec
+bundle exec cucumber features
 ```
 
 
