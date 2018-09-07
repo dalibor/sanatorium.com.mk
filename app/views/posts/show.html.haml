@@ -1,6 +1,5 @@
 - title(@post.title)
 - description(@post.description.to_s.html_safe)
-- head(%{<meta property="og:image" content="#{request.base_url}#{image_path('sanatorium_2014.jpg')}" />}.html_safe)
 
 .posts_wrapper
   = render 'posts/post', :post => @post
