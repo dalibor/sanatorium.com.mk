@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-gem 'mysql2'
+gem 'mysql2', '0.3.17'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +18,7 @@ gem 'modernizr-rails'
 gem 'haml'
 gem 'inherited_resources'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'mini_magick'
 gem 'will_paginate', '~> 3.0.0'
 gem 'acts_as_list'
 gem 'model_fields_i18n'
