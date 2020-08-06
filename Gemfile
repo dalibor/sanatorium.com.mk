@@ -10,7 +10,6 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'compass', '~> 0.12.alpha.0'
-  gem 'therubyracer', '=0.10.1'
 end
 
 gem 'jquery-rails'
