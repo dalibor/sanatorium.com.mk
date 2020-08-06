@@ -146,7 +146,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.0.3)
+    rake (12.3.3)
     rdoc (3.12.2)
       json (~> 1.4)
     responders (0.9.3)
@@ -229,7 +229,7 @@ DEPENDENCIES
   pickle
   rack-cache (= 1.2)
   rails (= 3.2.11)
-  rake (= 10.0.3)
+  rake (= 12.3.3)
   rspec-rails
   ruby_parser
   sass (= 3.2.5)

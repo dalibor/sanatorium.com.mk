@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'mysql2', '0.3.17'
 gem 'sprockets', '2.2.2'
-gem 'rake', '10.0.3'
+gem 'rake', '12.3.3'
 gem 'rack-cache', '1.2'
 
 # Gems used only for assets and not required
