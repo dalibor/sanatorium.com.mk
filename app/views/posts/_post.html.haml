@@ -1,9 +1,0 @@
-%article.post
-  %header
-    %h2.titlePost
-      = link_to post.t(:title), post_path(post)
-  %footer
-    %time{:datetime => post.published_at}
-      = post.published_at.to_s(:post)
-  .postContent
-    = raw find_and_preserve(post.t(:content))

@@ -1,8 +1,0 @@
-- title(@gallery.t(:name))
-%article.gallery
-  %header
-    %h2.title= @gallery.t(:name)
-    %ul
-      - @photos.each do |photo|
-        %li
-          = link_to image_tag(photo.image_url(:medium)), photo.image_url, :class => "lightbox", :rel => "lightbox"

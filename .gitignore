@@ -1,9 +1,0 @@
-.bundle
-db/*.sqlite3
-log/*.log
-tmp/
-.sass-cache/
-public/uploads
-public/assets
-config/config.yml
-config/database.yml

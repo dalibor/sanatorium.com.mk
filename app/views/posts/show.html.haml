@@ -1,8 +1,0 @@
-- title(@post.t(:title))
-- description(@post.t(:description).to_s.html_safe)
-
-.posts_wrapper
-  = render 'posts/post', :post => @post
-
-  .comments
-    = render 'shared/disqus'

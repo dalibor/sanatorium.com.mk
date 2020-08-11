@@ -1,9 +1,0 @@
-- title(t('menu.news'))
-.posts_wrapper
-  .posts
-    = render :partial => 'post', :collection => @posts
-
-    .pagination
-      = will_paginate @posts
-
-
