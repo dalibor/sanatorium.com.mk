@@ -1,0 +1,82 @@
+.jThumbnailScroller {
+  position: relative;
+  height: 122px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.jThumbnailScroller .jTscrollerContainer {
+  position: absolute;
+}
+.jThumbnailScroller .jTscroller {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  *display: inline;
+}
+.jThumbnailScroller .jTscrollerNextButton, .jThumbnailScroller .jTscrollerPrevButton {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+.jThumbnailScroller .jTscrollerNextButton {
+  background: url(/images/arrows.png) no-repeat scroll 0 0;
+  background-position: -30px 0;
+}
+.jThumbnailScroller .jTscrollerPrevButton {
+  background: url(/images/arrows.png) no-repeat scroll 0 0;
+  left: 15px;
+}
+.jThumbnailScroller .jTscrollerNextButton:hover, .jThumbnailScroller .jTscrollerPrevButton:hover {
+  background-color: #d56916;
+  opacity: 1;
+}
+.jThumbnailScroller .jTscroller a {
+  display: inline-block;
+  *display: inline;
+  border: 3px solid #dddddd;
+  margin: 6px 10px 6px 0;
+  background: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.jThumbnailScroller .jTscroller a:hover {
+  border-color: white;
+}
+.jThumbnailScroller .jTscroller a:first-child {
+  margin-left: 10px;
+}
+.jThumbnailScroller .jTscroller a img {
+  border: none;
+}
+.jThumbnailScroller .jTscroller a {
+  opacity: 0.7;
+}
+.jThumbnailScroller .jTscroller a:hover {
+  opacity: 1;
+}
+.jThumbnailScroller .jTscrollerNextButton {
+  margin: -20px 10px 0 10px;
+  right: 0;
+  top: 50%;
+}
+.jThumbnailScroller .jTscrollerPrevButton {
+  margin: -20px 10px 0 10px;
+  left: 0;
+  top: 50%;
+}

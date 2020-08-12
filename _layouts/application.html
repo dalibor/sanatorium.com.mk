@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body id='welcome_index'>
+    <div id='container'>
+      <header id='header'>
+        {%- include header.html -%}
+      </header>
+      <div class='wrapper'>
+        {{ content }}
+      </div>
+      <div class='push'></div>
+    </div>
+    <footer id='footer'>
+      <div class='wrapper'>
+        {%- include footer.html -%}
+      </div>
+    </footer>
+    <script src="/assets/jquery.js" type="text/javascript"></script>
+    <script src="/assets/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script src="/assets/jquery.lightbox.js" type="text/javascript"></script>
+    <script src="/assets/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.thumbnailScroller.js" type="text/javascript"></script>
+    <script src="/assets/welcome.js" type="text/javascript"></script>
+  </body>
+</html>

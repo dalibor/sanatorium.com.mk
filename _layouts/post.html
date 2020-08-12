@@ -1,27 +1,29 @@
 ---
-layout: default
+layout: application
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+<div class='posts_wrapper'>
+  <article class='post'>
+  <header>
+    <h2 class='titlePost'>
+      <a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a>
+    </h2>
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
+  <footer>
+    {%- assign date_format = "%d. %m. %Y %R" -%}
+    <time datetime='{{ page.date }}'>
+      {{ page.date | date: date_format }}
+    </time>
+  </footer>
+  <div class='postContent'>
     {{ content }}
   </div>
+  </article>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+  <div class='comments'>
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+  </div>
+</div>

@@ -8,4 +8,6 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  <link href='/favicon.ico' rel='shortcut icon'>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl_root }}">
 </head>

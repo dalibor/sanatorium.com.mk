@@ -1,0 +1,50 @@
+galleries:
+  molk_2015: "Молк 2015"
+
+global:
+  featured: "Најзначајни новости и фотографии"
+  featured_photos: "Промо фотографии"
+  change_language: "Промени јазик"
+  main_navigation: "Главна навигација"
+  social_media: "Друштвени медиуми"
+  recent_video: "Последно видео"
+  biography: "Биографија"
+  galleries: "Галерии"
+  downloads: "Медиа"
+  releases: "Изданија"
+  track_list: "Листа на песни"
+
+menu:
+  home: "Насловна"
+  news: "Новости"
+  band: "Бенд"
+  photos: "Галерија"
+  media: "Медиа"
+  releases: "Изданија"
+  contact: "Контакт"
+
+posts:
+  latest: "Последни новости"
+  read_more: "прочитај повеќе »"
+
+downloads:
+  audio: "Аудио песни"
+  video: "Видео клипови"
+  interviews: "Интервјуа"
+  tabs: "Таблатури"
+
+  f:
+    video_sekoj_den: "Секој Ден"
+    video_vo_sebe_umiram: "Во Себе Умирам"
+    audio_bez_razum: "Без Разум И Свест"
+    audio_our_doom: "Our Doom"
+    audio_wasted_existence: "Wasted Existence"
+    audio_sekoj_den: "Секој Ден"
+    audio_vo_sebe_umiram: "Во Себе Умирам"
+    interview_antena: "Антена - Јуни 2001"
+    interview_scissors: "Scissors - Јули 2002"
+    interview_metal_rs_ba: "TFBMS - Јули 2002"
+    interview_pro_rock: "Pro Rock - Август 2002"
+    interview_vampir: "Вампир - Ноември 2004"
+    interview_vampir: "Кајгана - Февруари 2012"
+    tab_bez_razum: "Без Разум И Свест"

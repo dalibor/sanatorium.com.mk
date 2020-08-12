@@ -1,0 +1,50 @@
+galleries:
+  molk_2015: "Molk 2015"
+
+global:
+  featured: "Featured news and photos"
+  featured_photos: "Promo photos"
+  change_language: "Change language"
+  main_navigation: "Main navigation"
+  social_media: "Друштвени медиуми"
+  recent_video: "Recent video"
+  biography: "Biography"
+  galleries: "Galleries"
+  downloads: "Media"
+  releases: "Releases"
+  track_list: "Tracklist"
+
+menu:
+  home: "Home"
+  news: "News"
+  band: "Band"
+  photos: "Photos"
+  media: "Media"
+  releases: "Releases"
+  contact: "Contact"
+
+posts:
+  latest: "Latest news"
+  read_more: "read more »"
+
+downloads:
+  audio: "Audio songs"
+  video: "Video clips"
+  interviews: "Interviews"
+  tabs: "Tabs"
+
+  f:
+    video_sekoj_den: "Sekoj Den"
+    video_vo_sebe_umiram: "Vo Sebe Umiram"
+    audio_bez_razum: "Bez Razum I Svest"
+    audio_our_doom: "Our Doom"
+    audio_wasted_existence: "Wasted Existence"
+    audio_sekoj_den: "Sekoj Den"
+    audio_vo_sebe_umiram: "Vo Sebe Umiram"
+    interview_antena: "Antena - June 2001"
+    interview_scissors: "Scissors - July 2002"
+    interview_metal_rs_ba: "TFBMS - July 2002"
+    interview_pro_rock: "Pro Rock - August 2002"
+    interview_vampir: "Vampir - Noemvri 2004"
+    interview_vampir: "Kajgana - Fevruary 2012"
+    tab_bez_razum: "Bez Razum I Svest"
