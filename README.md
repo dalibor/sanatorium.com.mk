@@ -23,8 +23,13 @@ bundle exec jekyll serve
 
 ## DEPLOY
 
-- Push branch to Github
-
 ```
+JEKYLL_ENV=production bundle exec jekyll build
+cd _site
+git remote add origin git@github.com:dalibor/sanatorium.com.mk.git
+git checkout -b gh-pages
+touch .nojekyll
+git add -A
+git commit -m "Jekyll build"
 git push origin gh-pages
 ```
