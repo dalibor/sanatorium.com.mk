@@ -27,8 +27,8 @@ layout: application
       <h2 class='hidden'>{% t globa.social_media %}</h2>
       <article class='promoVideo'>
         <h3 class='hidden'>{% t globa.recent_video %}</h3>
-        <a href="http://www.youtube.com/user/sanatorium2011" target="blank"><img alt="Youtube-icon" src="/assets/youtube-icon.png" /></a>
-        <iframe width="280" height="240" src="http://www.youtube.com/embed/TiIyN0vKfmw" frameborder="0" allowfullscreen></iframe>
+        <a href="https://www.youtube.com/user/sanatorium2011" target="blank"><img alt="Youtube-icon" src="/assets/youtube-icon.png" /></a>
+        <iframe width="280" height="240" src="https://www.youtube.com/embed/TiIyN0vKfmw" frameborder="0" allowfullscreen></iframe>
       </article>
     </section>
   </section>

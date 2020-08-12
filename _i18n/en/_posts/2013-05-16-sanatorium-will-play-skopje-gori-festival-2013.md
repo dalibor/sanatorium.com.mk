@@ -8,4 +8,4 @@ summary: 'Sanatorium will play Skopje Gori Festival 2013! 14.06.2013, Skopje For
 
 <p>Sanatorium will play Skopje Gori Festival 2013!</p><p>14.06.2013, Skopje Fortress</p>
     
-<iframe width="640" height="390" src="http://www.youtube.com/embed/1qXZhRt6HPQ" frameborder="0"></iframe>
+<iframe width="640" height="390" src="https://www.youtube.com/embed/1qXZhRt6HPQ" frameborder="0"></iframe>
