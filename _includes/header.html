@@ -1,15 +1,20 @@
 <div class='wrapper'>
-  <a href="/"><h1 class='ir' id='logo'>Sanatorium</h1>
-  </a>
+
+  {% if site.lang == "mk" %}
+    <a href="/"><h1 class='ir' id='logo'>Sanatorium</h1> </a>
+  {% elsif site.lang == "en" %}
+    <a href="/en"><h1 class='ir' id='logo'>Sanatorium</h1> </a>
+  {% endif %}
+
   <div id='main_nav'>
     <h2 class='hidden'>{% t globa.change_language %}</h2>
     <div class='lang'>
       {% if site.lang == "mk" %}
         {% capture en_link %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
-        <a href="{{ en_link }}" title="Translate to English"><img alt="En" src="/assets/en.jpg" /></a>
+        <a href="/en" title="Translate to English"><img alt="En" src="/assets/en.jpg" /></a>
       {% elsif site.lang == "en" %}
         {% capture mk_link %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
-        <a href="{{ mk_link }}" title="Преведи на Македонски"><img alt="Mk" src="/assets/mk.jpg" /></a>
+        <a href="/" title="Преведи на Македонски"><img alt="Mk" src="/assets/mk.jpg" /></a>
       {% endif %}
     </div>
     <nav>

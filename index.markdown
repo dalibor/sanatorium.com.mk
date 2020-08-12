@@ -42,7 +42,7 @@ layout: application
       <li>
         <article>
           <header>
-            <h3><a href="{{ site.baseurl }}{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
           </header>
           <footer>
             {%- assign date_format = "%d. %m. %Y %R" -%}
