@@ -13,12 +13,13 @@ layout: application
         <h3 class='hidden'>{% t globa.featured_photos %}</h3>
         <div class='slider-wrapper theme-default'>
           <div class='nivoSlider' id='slider'>
-            <img alt="0" src="/assets/slider/slider1/0.jpg" />
-            <img alt="1" src="/assets/slider/slider1/1.jpg" />
-            <img alt="2" src="/assets/slider/slider1/2.jpg" />
-            <img alt="3" src="/assets/slider/slider1/3.jpg" />
-            <img alt="4" src="/assets/slider/slider1/4.jpg" />
-            <img alt="5" src="/assets/slider/slider1/5.jpg" />
+            <img alt="0" src="/assets/slider/slider1/1.jpg" />
+            <img alt="1" src="/assets/slider/slider1/2.jpg" />
+            <img alt="2" src="/assets/slider/slider1/3.jpg" />
+            <img alt="3" src="/assets/slider/slider1/4.jpg" />
+            <img alt="4" src="/assets/slider/slider1/5.jpg" />
+            <img alt="5" src="/assets/slider/slider1/6.jpg" />
+            <img alt="5" src="/assets/slider/slider1/7.jpg" />
           </div>
         </div>
       </article>
