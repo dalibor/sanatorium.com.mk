@@ -23,6 +23,8 @@ bundle exec jekyll serve
 
 ## DEPLOY
 
+Because we're using [jekyll-multiple-languages-plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin) that is not in Github Pages supported plugins, we build the final source in `_site` and push it to `gh-pages` branch that gets published.
+
 ```
 JEKYLL_ENV=production bundle exec jekyll build
 cd _site
