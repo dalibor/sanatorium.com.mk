@@ -1,12 +1,3 @@
-var releases_show = {
-  run: function () {
-    $('.songs h3').click(function (e) {
-      e.preventDefault()
-      $(e.target).next().toggle();
-    });
-  }
-}
-
 $(window).load(function() {
   $('#slider').nivoSlider({
     effect: "fade",
@@ -38,11 +29,8 @@ $(function () {
     displayDownloadLink: true
   });
 
-  var id = $('body').attr("id");
-  if (id) {
-    controller_action = id;
-    if (typeof(window[controller_action]) !== 'undefined' && typeof(window[controller_action]['run']) === 'function') {
-      window[controller_action]['run']();
-    }
-  }
+  $('.songs h3').click(function (e) {
+    e.preventDefault()
+    $(e.target).next().toggle();
+  });
 });
