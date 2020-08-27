@@ -29,7 +29,7 @@ layout: application
       <article class='promoVideo'>
         <h3 class='hidden'>{% t globa.recent_video %}</h3>
         <a href="https://www.youtube.com/user/sanatorium2011" target="blank"><img alt="Youtube-icon" src="/assets/youtube-icon.png" /></a>
-        <iframe width="280" height="240" src="https://www.youtube.com/embed/TiIyN0vKfmw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="280" height="240" src="https://www.youtube.com/embed/xKemWz7gLhY" frameborder="0" allowfullscreen></iframe>
       </article>
     </section>
   </section>
