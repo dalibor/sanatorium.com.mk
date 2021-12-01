@@ -90,7 +90,7 @@ h2.subtitle {
 /* HEADER START */
 header#header {
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 header#header h1 {
   float: left;
@@ -225,6 +225,11 @@ article.promoPhotos #slider .nivo-controlNav {
   bottom: -35px;
 }
 
+section.promo {
+  float: left;
+  width: 370px;
+  margin: 0 10px 10px;
+}
 section.promoNews {
   float: left;
   width: 370px;
