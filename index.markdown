@@ -34,9 +34,6 @@ layout: application
     </section>
   </section>
   <sidebar class='sidebar'>
-  <section class='promo'>
-    <img src="/assets/taksirat_23.jpg" />
-  </section>
   <section class='promoNews'>
     <header>
       <h3 class='title'>{% t posts.latest %}</h3>
