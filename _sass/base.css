@@ -699,4 +699,8 @@ article.release aside.trackList ul li .song p {
   border: 1px solid #666666;
 }
 
+.center {
+  text-align: center;
+}
+
 /* PAGINATION END */
