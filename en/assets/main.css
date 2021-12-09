@@ -597,6 +597,8 @@ article.release aside.trackList ul li .song p { margin-left: 25px; }
 
 .pagination a:hover { border: 1px solid #666666; }
 
+.center { text-align: center; }
+
 /* PAGINATION END */
 .jThumbnailScroller { position: relative; height: 122px; padding: 0; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 
