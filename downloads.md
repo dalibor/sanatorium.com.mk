@@ -34,7 +34,7 @@ image: /uploads/attachment/sanatorium_2019.jpg
       <li><a href="/uploads/download/Sanatorium_-_Metal_RS_BA.doc">{% t downloads.f.interview_metal_rs_ba %}</a></li>
       <li><a href="/uploads/download/Sanatorium_-_Pro_Rock.doc">{% t downloads.f.interview_pro_rock %}</a></li>
       <li><a href="/uploads/download/Sanatorium_-_Vampir.doc">{% t downloads.f.interview_vampir %}</a></li>
-      <li><a href="/uploads/download/Sanatorium_-_Kajgana.doc">{% t downloads.f.tab_bez_razum %}</a></li>
+      <li><a href="/uploads/download/Sanatorium_-_Kajgana.doc">{% t downloads.f.interview_kajgana %}</a></li>
     </ul>
   </article>
   <article class='download tabs'>
