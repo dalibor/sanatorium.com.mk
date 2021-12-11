@@ -25,6 +25,19 @@ layout: application
       <article>
         <header>
           <h3>
+            <a href="{{ site.baseurl }}/galleries/promo_2018">{% translate galleries.promo_2018 %}</a>
+          </h3>
+        </header>
+        <a href="{{ site.baseurl }}/galleries/promo_2018"><img src="/uploads/gallery/cover/promo_2018.jpg" /></a>
+        <footer>
+          <p>{% translate galleries.promo_2018 %}</p>
+        </footer>
+      </article>
+    </li>
+    <li>
+      <article>
+        <header>
+          <h3>
             <a href="{{ site.baseurl }}/galleries/molk_2015">{% translate galleries.molk_2015 %}</a>
           </h3>
         </header>
