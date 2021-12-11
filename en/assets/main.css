@@ -509,15 +509,17 @@ section.galleries ul li footer p { margin-top: 5px; font-size: 12px; }
 
 article.gallery { overflow: hidden; padding: 10px; background: rgba(150, 150, 150, 0.08); }
 
-article.gallery header h2 { text-align: center; }
+article.gallery h2 { text-align: center; }
 
-article.gallery header ul { overflow: hidden; background: rgba(0, 0, 0, 0.6); padding: 10px 0; }
+article.gallery h3 { text-align: center; background: rgba(0, 0, 0, 0.6); padding-top: 10px; }
 
-article.gallery header ul li { float: left; margin: 10px; width: 168px; }
+article.gallery ul { overflow: hidden; background: rgba(0, 0, 0, 0.6); padding: 10px 0; }
 
-article.gallery header ul li a { display: block; }
+article.gallery ul li { float: left; margin: 10px; width: 168px; }
 
-article.gallery header ul li img { display: block; margin: 0 auto; border: 4px solid rgba(150, 150, 150, 0.08); }
+article.gallery ul li a { display: block; }
+
+article.gallery ul li img { display: block; margin: 0 auto; border: 4px solid rgba(150, 150, 150, 0.08); }
 
 /* GALLERIES END */
 /* DOWNLOADS BEGIN */
@@ -596,8 +598,6 @@ article.release aside.trackList ul li .song p { margin-left: 25px; }
 .pagination a { color: #999999; }
 
 .pagination a:hover { border: 1px solid #666666; }
-
-.center { text-align: center; }
 
 /* PAGINATION END */
 .jThumbnailScroller { position: relative; height: 122px; padding: 0; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
