@@ -35,6 +35,7 @@ image: /uploads/attachment/sanatorium_2019.jpg
       <li><a href="/uploads/download/Sanatorium_-_Pro_Rock.doc">{% t downloads.f.interview_pro_rock %}</a></li>
       <li><a href="/uploads/download/Sanatorium_-_Vampir.doc">{% t downloads.f.interview_vampir %}</a></li>
       <li><a href="/uploads/download/Sanatorium_-_Kajgana.doc">{% t downloads.f.interview_kajgana %}</a></li>
+      <li><a href="/uploads/download/Sanatorium_-_Nova_Makedonija.doc">{% t downloads.f.interview_nova_makedonija %}</a></li>
     </ul>
   </article>
   <article class='download tabs'>
