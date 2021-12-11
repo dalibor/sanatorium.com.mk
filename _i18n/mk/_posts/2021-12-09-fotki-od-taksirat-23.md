@@ -7,7 +7,7 @@ summary: 'Фотки од Таксират 23'
 ---
 
 <p>
-  Додадовме  <a href="{{ site.baseurl }}/galleries/taksirat_23">нови фотки од Таксират 2021</a>. Фотографирани од Стефан Рајхл.
+  Додадовме <a href="{{ site.baseurl }}/galleries/taksirat_23">нови фотки од Таксират 2021</a>.
 </p>
 
 <a href="{{ site.baseurl }}/galleries/taksirat_23">

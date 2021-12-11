@@ -7,7 +7,7 @@ summary: 'Photos from Taksirat 2021'
 ---
 
 <p>
-  We added <a href="{{ site.baseurl }}/galleries/taksirat_23">new photos from Taksirat 2021</a>. Photos taken by Stefan Rajhl.
+  We added <a href="{{ site.baseurl }}/galleries/taksirat_23">new photos from Taksirat 2021</a>.
 </p>
 
 <a href="{{ site.baseurl }}/galleries/taksirat_23">

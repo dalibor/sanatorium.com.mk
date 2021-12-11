@@ -502,23 +502,28 @@ article.gallery {
   padding: 10px;
   background: rgba(150, 150, 150, 0.08);
 }
-article.gallery header h2 {
+article.gallery h2 {
   text-align: center;
 }
-article.gallery header ul {
+article.gallery h3 {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 10px;
+}
+article.gallery ul {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 0;
 }
-article.gallery header ul li {
+article.gallery ul li {
   float: left;
   margin: 10px;
   width: 168px;
 }
-article.gallery header ul li a {
+article.gallery ul li a {
   display: block;
 }
-article.gallery header ul li img {
+article.gallery ul li img {
   display: block;
   margin: 0 auto;
   border: 4px solid rgba(150, 150, 150, 0.08);
@@ -697,10 +702,6 @@ article.release aside.trackList ul li .song p {
 
 .pagination a:hover {
   border: 1px solid #666666;
-}
-
-.center {
-  text-align: center;
 }
 
 /* PAGINATION END */

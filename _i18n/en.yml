@@ -1,7 +1,10 @@
 galleries:
   molk_2015: "Molk 2015"
   taksirat_2021: "Taksirat 2021"
-  taksirat_2021_photo_by: "Photos by Stefan Rajhl"
+  photo_by:
+    stefan_rajhl: "Photos by Stefan Rajhl"
+    toshe_ognjanov: "Photos by Toshe Ognjanov"
+    stefan_samandov: "Photos by Stefan Samandov"
 
 global:
   featured: "Featured news and photos"
