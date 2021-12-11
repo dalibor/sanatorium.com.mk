@@ -4,6 +4,7 @@ title:  'Sanatorium will play at Taksirat 23!'
 date:   2021-12-01 08:00:00 +0200
 permalink: /posts/32-sanatorium-at-taksirat-23
 summary: 'Sanatorium will play at Taksirat 23!'
+image: /uploads/attachment/taksirat_23.jpg
 ---
 
 Sanatorium will play at Taksirat 23!

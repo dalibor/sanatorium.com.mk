@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/nokjni_volci_2011_razno/DSC05443.JPG
 ---
 
 <article class='gallery'>

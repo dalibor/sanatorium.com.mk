@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/arena_muzika_2002/sofia2002_01.jpg
 ---
 
 <article class='gallery'>

@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/alarm_festival_2002/alarm2002_01.jpg
 ---
 
 <article class='gallery'>

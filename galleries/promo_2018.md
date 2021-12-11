@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/promo_2018/stefan_rajhl/02.jpg
 ---
 
 <article class='gallery'>

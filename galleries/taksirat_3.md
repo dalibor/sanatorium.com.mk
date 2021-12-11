@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/taksirat_3/taksirat3_01.jpg
 ---
 
 <article class='gallery'>

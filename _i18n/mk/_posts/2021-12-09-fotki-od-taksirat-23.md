@@ -4,6 +4,7 @@ title:  'Фотки од Таксират 2021'
 date:   2021-12-09 20:00:00 +0200
 permalink: /posts/33-fotki-od-taksirat-2021
 summary: 'Фотки од Таксират 23'
+image: /uploads/attachment/taksirat_23_photo.jpg
 ---
 
 <p>

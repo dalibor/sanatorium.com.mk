@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/belgrade_calling_2012/DSC00651.JPG
 ---
 
 <article class='gallery'>

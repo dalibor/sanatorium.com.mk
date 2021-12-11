@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/gallery/peace_unlimited_festival_2014/1.JPG
 ---
 
 <article class='gallery'>

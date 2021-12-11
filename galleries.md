@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: application
+image: /uploads/attachment/sanatorium_2019.jpg
 ---
 
 <section class='galleries'>
