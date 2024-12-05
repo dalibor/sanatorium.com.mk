@@ -27,10 +27,10 @@ Because we're using [jekyll-multiple-languages-plugin](https://github.com/kurtss
 
 ```
 JEKYLL_ENV=production bundle exec jekyll build
-cd _site
-git remote add origin git@github.com:dalibor/sanatorium.com.mk.git
-git checkout -b gh-pages
-touch .nojekyll
+mv _site/ /tmp/
+git checkout gh-pages
+cp -R /tmp/_site/* .
+rm -rf /tmp/_site
 git add -A
 git commit -m "Jekyll build"
 git push origin gh-pages
