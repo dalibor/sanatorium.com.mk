@@ -230,6 +230,12 @@ section.promo {
   width: 370px;
   margin: 0 10px 10px;
 }
+section.spotify {
+  float: left;
+  width: 370px;
+  height: 90px;
+  margin: 10px 10px;
+}
 section.promoNews {
   float: left;
   width: 370px;

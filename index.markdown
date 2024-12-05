@@ -35,6 +35,11 @@ image: /uploads/attachment/sanatorium_2019.jpg
     </section>
   </section>
   <sidebar class='sidebar'>
+
+  <section class='spotify'>
+    <iframe src="https://open.spotify.com/embed/artist/2WrTKj12WsA9LX5TvdPQlL" width="370" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </section>
+
   <section class='promoNews'>
     <header>
       <h3 class='title'>{% t posts.latest %}</h3>
